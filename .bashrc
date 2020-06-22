@@ -1,3 +1,4 @@
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -525,28 +526,10 @@ function __setprompt
     PS4='\[${DARKGRAY}\]+\[${NOCOLOR}\] '
 }
 PROMPT_COMMAND='__setprompt'
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/meet/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/meet/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/meet/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/meet/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
 
 run(){
     $($@ 2>/dev/null 1>&2 &)
 }
 
+editrc () { edit ~/.zshrc ; source ~/.zshrc }
 
-# # The next line updates PATH for the Google Cloud SDK.
-# if [ -f '/home/meet/google-cloud-sdk/path.bash.inc' ]; then . '/home/meet/google-cloud-sdk/path.bash.inc'; fi
-
-# # The next line enables shell command completion for gcloud.
-# if [ -f '/home/meet/google-cloud-sdk/completion.bash.inc' ]; then . '/home/meet/google-cloud-sdk/completion.bash.inc'; fi
