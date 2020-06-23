@@ -1,3 +1,121 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/mtaravi/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="spaceship"
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE="true"
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE="true"
+
+# Uncomment the following line to disable bi-weekly auto-update checks.
+# DISABLE_AUTO_UPDATE="true"
+
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
+# Uncomment the following line to change how often to auto-update (in days).
+# export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS="true"
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE="true"
+
+# Uncomment the following line to enable command auto-correction.
+ENABLE_CORRECTION="true"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+# or set a custom format using the strftime function format specifications,
+# see 'man strftime' for details.
+# HIST_STAMPS="mm/dd/yyyy"
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH="/usr/local/man:$MANPATH"
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='mvim'
+# fi
+
+# Compilation flags
+# export ARCHFLAGS="-arch x86_64"
+
+# Set personal aliases, overriding those provided by oh-my-zsh libs,
+# plugins, and themes. Aliases can be placed here, though oh-my-zsh
+# users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig="mate ~/.zshrc"
+# alias ohmyzsh="mate ~/.oh-my-zsh"
+
+
+compass-research-ssh () { ssh -i ~/Downloads/project-compass-research-key2.pem ubuntu@54.164.99.231 }
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/mtaravi/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/mtaravi/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/mtaravi/opt/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/mtaravi/opt/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
 
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
@@ -14,8 +132,9 @@ esac
 HISTCONTROL=erasedups
 
 
+
 # append to the history file, don't overwrite it
-shopt -s histappend
+setopt APPEND_HISTORY
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
 HISTSIZE=2000
@@ -23,11 +142,41 @@ HISTFILESIZE=10000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
-shopt -s checkwinsize
+# no zsh equivalent
+# setopt -s checkwinsize
 
 # If set, the pattern "**" used in a pathname expansion context will
 # match all files and zero or more directories and subdirectories.
-#shopt -s globstar
+# setopt -s globstar
+
+
+# If a command is issued that can’t be executed as a normal command, and the command is the name of a directory, perform the cd command to that directory.
+setopt AUTO_CD
+
+# Treat  the ‘#’, ‘~’ and ‘^’ characters as part of patterns for filename generation, etc.  (An initial unquoted ‘~’ always produces named directory expansion.)
+# setopt EXTENDED_GLOB
+
+# If a pattern for filename generation has no matches, print an error, instead of leaving it unchanged in the argument  list. This also applies to file expansion of an initial ‘~’ or ‘=’.
+setopt NOMATCH
+
+# no Beep on error in ZLE.
+# setopt NO_BEEP
+
+# Remove  any right prompt from display when accepting a command line. This may be useful with terminals with other cut/paste methods.
+setopt TRANSIENT_RPROMPT
+
+# If unset, the cursor is set to the end of the word if completion is started. Otherwise it stays there and completion is done from both ends.
+setopt COMPLETE_IN_WORD
+
+# Make cd push the old directory onto the directory stack.
+setopt AUTO_PUSHD
+
+# Don’t push multiple copies of the same directory onto the directory stack.
+setopt PUSHD_IGNORE_DUPS
+
+# DON NOT Allow ‘>’ redirection to truncate existing files, and ‘>>’ to create files. Otherwise ‘>!’ or ‘>|’ must be used to truncate  a file, and ‘>>!’ or ‘>>|’ to create a file.
+setopt no_clobber
+
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -45,7 +194,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -58,21 +207,22 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
-unset color_prompt force_color_prompt
-
-# If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+# prompt set by spaceship
+# if [ "$color_prompt" = yes ]; then
+#     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+# else
+#     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+# fi
+# unset color_prompt force_color_prompt
+# 
+# # If this is an xterm set the title to user@host:dir
+# case "$TERM" in
+# xterm*|rxvt*)
+#     PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+#     ;;
+# *)
+#     ;;
+# esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -119,31 +269,31 @@ fi
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
+# not available in zsh afaik
+# if ! setopt -oq posix; then
+#   if [ -f /usr/share/bash-completion/bash_completion ]; then
+#     . /usr/share/bash-completion/bash_completion
+#   elif [ -f /etc/bash_completion ]; then
+#     . /etc/bash_completion
+#   fi
+# fi
 
-
-iatest=$(expr index "$-" i)
-
-# Disable the bell
-if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
-
-# Ignore case on auto-completion
-# Note: bind used instead of sticking these in .inputrc
-if [[ $iatest > 0 ]]; then bind "set completion-ignore-case on"; fi
-
-# Show auto-completion list automatically, without double tab
-if [[ $iatest > 0 ]]; then bind "set show-all-if-ambiguous On"; fi
+# idk what the next part is doing, or how to make it work for zsh
+# iatest=$(expr index "$-" i)
+# 
+# # Disable the bell
+# if [[ $iatest > 0 ]]; then bind "set bell-style visible"; fi
+# 
+# # Ignore case on auto-completion
+# # Note: bind used instead of sticking these in .inputrc
+# if [[ $iatest '>' 0 ]]; then bind "set completion-ignore-case on"; fi
+# 
+# # Show auto-completion list automatically, without double tab
+# if [[ $iatest '>' 0 ]]; then bind "set show-all-if-ambiguous On"; fi
 
 # Set the default editor
 # export EDITOR=subl
 # export VISUAL=subl
-
 
 # alias to show the date
 alias da='date "+%Y-%m-%d %A %T %Z"'
@@ -184,31 +334,17 @@ alias ungz='tar -xvzf'
 # Use the best version of pico installed
 edit ()
 {
-    if [ "$(type -t jpico)" = "file" ]; then
-        # Use JOE text editor http://joe-editor.sourceforge.net/
-        jpico -nonotice -linums -nobackups "$@"
-    elif [ "$(type -t nano)" = "file" ]; then
-        nano -c "$@"
-    elif [ "$(type -t pico)" = "file" ]; then
-        pico "$@"
-    else
-        vim "$@"
-    fi
+    vim "$@"
 }
 sedit ()
 {
-    if [ "$(type -t jpico)" = "file" ]; then
-        # Use JOE text editor http://joe-editor.sourceforge.net/
-        sudo jpico -nonotice -linums -nobackups "$@"
-    elif [ "$(type -t nano)" = "file" ]; then
-        sudo nano -c "$@"
-    elif [ "$(type -t pico)" = "file" ]; then
-        sudo pico "$@"
-    else
-        sudo vim "$@"
-    fi
+    sudo vim "$@"
 }
 
+alias subl='edit'
+alias atom='edit'
+alias ssubl='sedit'
+alias satom='sedit'
 alias pico='edit'
 alias spico='sedit'
 alias nano='edit'
@@ -532,5 +668,8 @@ run(){
     $($@ 2>/dev/null 1>&2 &)
 }
 
+
 editrc () { edit ~/.zshrc ; source ~/.zshrc }
+
+
 
