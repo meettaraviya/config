@@ -180,7 +180,7 @@ set whichwrap+=<,>,[,]
 
 " Turn on the whole plugin.                                            *'g:pymode'*
 " >
-" let g:pymode = 1
+let g:pymode = 1
 
 " Turn off plugin's warnings.                                 *'g:pymode_warnings'*
 " >
@@ -248,7 +248,7 @@ let g:pymode_preview_position = 'botright'
 
 "                                                               *'g:pymode_python'*
 " >
-let g:pymode_python = 'python'
+let g:pymode_python = 'python3'
 
 " Values are `python3`, `disable`. If value set to `disable` most
 " python-features of **pymode** will be disabled.
