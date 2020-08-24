@@ -98,6 +98,9 @@ nnoremap <F2> :set invpaste paste?<CR>
 imap <F2> <C-O>:set invpaste paste?<CR>
 set pastetoggle=<F2>
 
+" Clear trailing whitespace
+nnoremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 " Toggle mouse usage and line numbers
 map <F3> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>:set invnumber <CR>
 

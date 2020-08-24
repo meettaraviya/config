@@ -11,163 +11,217 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~Msle0~/\<aws\>
+~MSle0~/\<sample_negative\>
+
+# Last Substitute Search Pattern:
+~MSle0&\s\+$
+
+# Last Substitute String:
+$
 
 # Command Line History (newest to oldest):
-:wqa
-|2,0,1594747967,,"wqa"
-:set paste
-|2,0,1594747344,,"set paste"
-:set paster
-|2,0,1594747340,,"set paster"
-:qa
-|2,0,1594664074,,"qa"
 :w
-|2,0,1594077297,,"w"
-:set mouse=
-|2,0,1594239470,,"set mouse="
+|2,0,1598232052,,"w"
 :q
-|2,0,1594239368,,"q"
-:set modifiable on
-|2,0,1594239350,,"set modifiable on"
-:ter
-|2,0,1594239232,,"ter"
-:wqa!
-|2,0,1594170610,,"wqa!"
-:qa!
-|2,0,1594150930,,"qa!"
-:%s/
-|2,0,1594150928,,"%s/"
-:r%/
-|2,0,1594150874,,"r%/"
-:set nopaste
-|2,0,1594075401,,"set nopaste"
+|2,0,1598137468,,"q"
 :q!
-|2,0,1594054717,,"q!"
-:vs !tmux
-|2,0,1594054708,,"vs !tmux"
-:!tmux
-|2,0,1594054684,,"!tmux"
-:-
-|2,0,1594054470,,"-"
-:'<,'>| pbcopy
-|2,0,1593646642,,"'<,'>| pbcopy"
-:'<,'>| !pbcopy
-|2,0,1593646625,,"'<,'>| !pbcopy"
-:help pymode
-|2,0,1593633753,,"help pymode"
-:help pymode definition
-|2,0,1593633745,,"help pymode definition"
-:vert ter
-|2,0,1593629246,,"vert ter"
-:!pwd
-|2,0,1593559335,,"!pwd"
+|2,0,1598134016,,"q!"
 :wq
-|2,0,1593457150,,"wq"
-:! bash
-|2,0,1593453569,,"! bash"
-:PluginInstall
-|2,0,1593452783,,"PluginInstall"
-:source %:PluginInstall
-|2,0,1593452775,,"source %:PluginInstall"
+|2,0,1598133102,,"wq"
+:wqa
+|2,0,1597782931,,"wqa"
+:qa!
+|2,0,1597191894,,"qa!"
+:nnoremap <F4> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+|2,0,1597180213,,"nnoremap <F4> :let _s=@/<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>"
+:nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+|2,0,1597180181,,"nnoremap <F5> :let _s=@/<Bar>:%s/\\s\\+$//e<Bar>:let @/=_s<Bar><CR>"
+:%s/ \+\n/\n/g
+|2,0,1597180158,,"%s/ \\+\\n/\\n/g"
+:ww
+|2,0,1597177427,,"ww"
+:i
+|2,0,1597175130,,"i"
+:%s/pos_p/all_p/
+|2,0,1597144350,,"%s/pos_p/all_p/"
+:%s/sort_perm\[i\]/j/g
+|2,0,1597083233,,"%s/sort_perm\\[i\\]/j/g"
+:edit!
+|2,0,1597056838,,"edit!"
+:<F3><CR>
+|2,0,1596741146,,"<F3><CR>"
+:<F3>
+|2,0,1596741129,,"<F3>"
+:set invnumber
+|2,0,1596711716,,"set invnumber"
+:map <F3> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>:set invnumber <CR>
+|2,0,1596711695,,"map <F3> <ESC>:exec &mouse!=\"\"? \"set mouse=\" : \"set mouse=nv\"<CR>:set invnumber <CR>"
+:tabn ~/.vimrc
+|2,0,1596711371,,"tabn ~/.vimrc"
+:  map <F3> <ESC>:exec &mouse!=""? "set mouse=" : "set mouse=nv"<CR>
+|2,0,1596711250,,"  map <F3> <ESC>:exec &mouse!=\"\"? \"set mouse=\" : \"set mouse=nv\"<CR>"
+:noremap gB <C-W>W
+|2,0,1596504338,,"noremap gB <C-W>W"
+:split
+|2,0,1596504310,,"split"
+:noremap gb <C-W>w
+|2,0,1596504291,,"noremap gb <C-W>w"
+:noremap gb :bnext<CR>
+|2,0,1596503815,,"noremap gb :bnext<CR>"
+:vs
+|2,0,1596503624,,"vs"
+:bnext
+|2,0,1596480472,,"bnext"
+:bnew
+|2,0,1596480421,,"bnew"
+:source %
+|2,0,1596480111,,"source %"
+:qa
+|2,0,1596478547,,"qa"
+:autocmd BufWinEnter * NERDTreeMirror
+|2,0,1596476278,,"autocmd BufWinEnter * NERDTreeMirror"
+:@p
+|2,0,1596476254,,"@p"
+:NERDTreeMirror
+|2,0,1596476193,,"NERDTreeMirror"
+:source ~/.vimrc
+|2,0,1596475943,,"source ~/.vimrc"
+:set expandtab
+|2,0,1596475925,,"set expandtab"
+:set expandtabs
+|2,0,1596475920,,"set expandtabs"
+:set nopaste
+|2,0,1596475490,,"set nopaste"
+:set paste
+|2,0,1596475486,,"set paste"
+:FZF
+|2,0,1596472098,,"FZF"
+:fzf
+|2,0,1596472073,,"fzf"
+:help fzf
+|2,0,1596471996,,"help fzf"
+:Files
+|2,0,1596471935,,"Files"
+:%s/out_obj/outfits/g
+|2,0,1596464579,,"%s/out_obj/outfits/g"
+:%s/like_ratio/label/g
+|2,0,1596239114,,"%s/like_ratio/label/g"
+:source '<,'>
+|2,0,1596231793,,"source '<,'>"
+:source 
+|2,0,1596231781,,"source "
+:syntax enable
+|2,0,1596231750,,"syntax enable"
+:'<,'>source
+|2,0,1596231742,,"'<,'>source"
+:'<,'>source %
+|2,0,1596231733,,"'<,'>source %"
+:set ts=4
+|2,0,1596231582,,"set ts=4"
+:tabm 0
+|2,0,1596134151,,"tabm 0"
 
 # Search String History (newest to oldest):
-? \<aws\>
-|2,1,1594747681,,"\\<aws\\>"
-? \<load_model\>
-|2,1,1594077597,,"\\<load_model\\>"
-?/load_model
-|2,1,1594077549,47,"load_model"
-?/let_test
-|2,1,1594077455,47,"let_test"
-?/let_te
-|2,1,1594077446,47,"let_te"
-?/checkp
-|2,1,1594077429,47,"checkp"
-?/\/
-|2,1,1594157989,47,"\\/"
-? \<load_fitb_questions\>
-|2,1,1594157808,,"\\<load_fitb_questions\\>"
-? \<parse_iminfo\>
-|2,1,1594157788,,"\\<parse_iminfo\\>"
-?/number
-|2,1,1594157609,47,"number"
-?/number of
-|2,1,1594157604,47,"number of"
-?/cuda
-|2,1,1594157471,47,"cuda"
-?/is_cuda
-|2,1,1594157467,47,"is_cuda"
-? \<test_compat_and_fitb\>
-|2,1,1593716712,,"\\<test_compat_and_fitb\\>"
-? \<test_compatibility\>
-|2,1,1593716660,,"\\<test_compatibility\\>"
-? \<_train\>
-|2,1,1593716593,,"\\<_train\\>"
-? \<update\>
-|2,1,1593716442,,"\\<update\\>"
-? \<adjust_learning_rate\>
-|2,1,1593716241,,"\\<adjust_learning_rate\\>"
+? \s\+$
+|2,1,1598137482,,"\\s\\+$"
 ? \<sample_negative\>
-|2,1,1593715293,,"\\<sample_negative\\>"
-? \<load_train_item\>
-|2,1,1593715170,,"\\<load_train_item\\>"
-?/__get
-|2,1,1593715112,47,"__get"
-?/sample_ne
-|2,1,1593714755,47,"sample_ne"
-? \<load_compatibility_questions\>
-|2,1,1593714621,,"\\<load_compatibility_questions\\>"
-?/TODO
-|2,1,1593644120,47,"TODO"
-?/nega
-|2,1,1593644114,47,"nega"
-? \<masks\>
-|2,1,1593640769,,"\\<masks\\>"
-?/self.embe
-|2,1,1593637342,47,"self.embe"
-?/self.tnet =
-|2,1,1593637313,47,"self.tnet ="
-?/tnet
-|2,1,1593637180,47,"tnet"
-?/embeddin
-|2,1,1593637126,47,"embeddin"
-?/eval
-|2,1,1593637087,47,"eval"
-?/adjus
-|2,1,1593634701,47,"adjus"
+|2,1,1598135670,,"\\<sample_negative\\>"
 ?/sample
-|2,1,1593628872,47,"sample"
-?/category2
-|2,1,1593628398,47,"category2"
-?/im2ty
-|2,1,1593627428,47,"im2ty"
-?/Datas
-|2,1,1593625724,47,"Datas"
-?/train_load
-|2,1,1593625243,47,"train_load"
-?/_train
-|2,1,1593625222,47,"_train"
-?/def ini
-|2,1,1593624969,47,"def ini"
-?/configu
-|2,1,1593624936,47,"configu"
-?/epoch
-|2,1,1593458586,47,"epoch"
-?/expand
-|2,1,1593458154,47,"expand"
-?/choice
-|2,1,1593457125,47,"choice"
-?/random
-|2,1,1593457086,47,"random"
-?/list
-|2,1,1593455943,47,"list"
-?/map_
-|2,1,1593455902,47,"map_"
-? \<polyvore_outfits\>
-|2,1,1593453236,,"\\<polyvore_outfits\\>"
-? \<olyvore_outfits\>
-|2,1,1593453185,,"\\<olyvore_outfits\\>"
+|2,1,1598135669,47,"sample"
+? \<all_pairs\>
+|2,1,1598135555,,"\\<all_pairs\\>"
+?/negat
+|2,1,1598135485,47,"negat"
+?/Scale
+|2,1,1598135420,47,"Scale"
+? \<Softmax\>
+|2,1,1598135266,,"\\<Softmax\\>"
+?/softma
+|2,1,1598135263,47,"softma"
+?/Soft
+|2,1,1598135253,47,"Soft"
+?/Scal
+|2,1,1598135207,47,"Scal"
+?/self.cud
+|2,1,1598135106,47,"self.cud"
+?/args.cudadd
+|2,1,1598135097,47,"args.cudadd"
+?/cuda
+|2,1,1598135078,47,"cuda"
+?//self.
+|2,1,1598135029,47,"/self."
+? \<no_cuda\>
+|2,1,1598134947,,"\\<no_cuda\\>"
+? \<args\>
+|2,1,1598134930,,"\\<args\\>"
+?/args
+|2,1,1598134913,47,"args"
+? \<argsort\>
+|2,1,1598134909,,"\\<argsort\\>"
+? \<cuda\>
+|2,1,1598134865,,"\\<cuda\\>"
+?/_eval
+|2,1,1598134480,47,"_eval"
+? \<_train\>
+|2,1,1598134351,,"\\<_train\\>"
+?/train(
+|2,1,1598134341,47,"train("
+?/_eva
+|2,1,1598134273,47,"_eva"
+?/metr
+|2,1,1598134262,47,"metr"
+?/metric
+|2,1,1598134232,47,"metric"
+? \<_evaluate\>
+|2,1,1598134156,,"\\<_evaluate\\>"
+?/pair
+|2,1,1598134097,47,"pair"
+?/pair_fo
+|2,1,1598134088,47,"pair_fo"
+? \<CSA_triplet\>
+|2,1,1598133899,,"\\<CSA_triplet\\>"
+?/_evalua
+|2,1,1598133828,47,"_evalua"
+?/evaluate
+|2,1,1598133599,47,"evaluate"
+?/_evalu
+|2,1,1598133309,47,"_evalu"
+? \<test_precision_and_recall\>
+|2,1,1598133304,,"\\<test_precision_and_recall\\>"
+?/train
+|2,1,1598133173,47,"train"
+?/src
+|2,1,1598133170,47,"src"
+?/test_prec
+|2,1,1598051000,47,"test_prec"
+?/test_pre
+|2,1,1598050762,47,"test_pre"
+? \<print_and_save\>
+|2,1,1598049687,,"\\<print_and_save\\>"
+?/print_and
+|2,1,1598049676,47,"print_and"
+? \<val_loader\>
+|2,1,1598049636,,"\\<val_loader\\>"
+? \<test_compat_and_fitb\>
+|2,1,1598031038,,"\\<test_compat_and_fitb\\>"
+?/test_com
+|2,1,1598031035,47,"test_com"
+? \<TypeSpecificNet\>
+|2,1,1598030980,,"\\<TypeSpecificNet\\>"
+?/TypeS
+|2,1,1598030978,47,"TypeS"
+?/Type
+|2,1,1598030965,47,"Type"
+?/forwa155G
+|2,1,1598030917,47,"forwa155G"
+?/__g
+|2,1,1598006678,47,"__g"
+?/pair_for
+|2,1,1598006475,47,"pair_for"
+? \<pair_forward\>
+|2,1,1598006460,,"\\<pair_forward\\>"
+?/pair_forwa
+|2,1,1598006445,47,"pair_forwa"
 
 # Expression History (newest to oldest):
 
@@ -177,290 +231,2378 @@
 
 # Registers:
 "0	LINE	0
-	print(f"Number of items: {len(item_data)}")
-|3,0,0,1,1,0,1594424207,"print(f\"Number of items: {len(item_data)}\")"
+	            neg_im = np.random.choice(self.imnames)
+|3,0,0,1,1,0,1598135751,"            neg_im = np.random.choice(self.imnames)"
 ""1	LINE	0
-	V
-	[git_branch]
-	disabled = "true"
-|3,1,1,1,3,0,1594747964,"V","[git_branch]","disabled = \"true\""
+	role = 'arn:aws:iam::223554270395:role/service-role/AmazonSageMaker-ExecutionRole-20200818T141585'
+	
+|3,1,1,1,2,0,1598138165,"role = 'arn:aws:iam::223554270395:role/service-role/AmazonSageMaker-ExecutionRole-20200818T141585'",""
 "2	LINE	0
-	V# Overwrite a default_prompt_order and  use custom prompt_order
-	prompt_order=["rust","line_break","package","line_break","character"]
-	# # Wait 10 milliseconds for starship to check files under the current directory.
-	scan_timeout = 100
-	
-|3,0,2,1,5,0,1594747631,"V# Overwrite a default_prompt_order and  use custom prompt_order","prompt_order=[\"rust\",\"line_break\",\"package\",\"line_break\",\"character\"]","# # Wait 10 milliseconds for starship to check files under the current directory.","scan_timeout = 100",""
+	role = 'arn:aws:iam::223554270395:role/service-role/AmazonSageMaker-ExecutionRole-20200401T154949'dd
+|3,0,2,1,1,0,1598138164,"role = 'arn:aws:iam::223554270395:role/service-role/AmazonSageMaker-ExecutionRole-20200401T154949'dd"
 "3	LINE	0
-	
-	dd_newline = false
-	# Overwrite a default_prompt_order and  use custom prompt_order
-	# prompt_order=["rust","line_break","package","line_break","character"]
-	# # Wait 10 milliseconds for starship to check files under the current directory.
-	scan_timeout = 100
-	
-	
-	od_newline = false
-|3,0,3,1,9,0,1594747429,"","dd_newline = false","# Overwrite a default_prompt_order and  use custom prompt_order","# prompt_order=[\"rust\",\"line_break\",\"package\",\"line_break\",\"character\"]","# # Wait 10 milliseconds for starship to check files under the current directory.","scan_timeout = 100","","","od_newline = false"
+	        self.cuda = args.cuda
+|3,0,3,1,1,0,1598135103,"        self.cuda = args.cuda"
 "4	LINE	0
-	od_newline = false
-|3,0,4,1,1,0,1594747396,"od_newline = false"
+	        def metrics_string(y_true, scores):
+	            sort_perm = np.argsort(-scores)
+	            thresholds = scores[sort_perm]
+	            counts = y_true[sort_perm].cumsum()
+	            precision = counts/np.arange(1, len(y_true) + 1)
+	            recall = counts/y_true.sum()
+	
+	            log = ""
+	
+	            log += (f"Precision     @  10: {precision[9]}\n")
+	            log += (f"Precision     @  20: {precision[19]}\n")
+	            log += (f"Precision     @  50: {precision[49]}\n")
+	            log += (f"Precision     @ 100: {precision[99]}\n")
+	            log += (f"Avg Precision @  10: {precision[:10].mean()}\n")
+	            log += (f"Avg Precision @  20: {precision[:20].mean()}\n")
+	            log += (f"Avg Precision @  50: {precision[:50].mean()}\n")
+	            log += (f"Avg Precision @ 100: {precision[:100].mean()}\n")
+	            log += (f"Recall        @  10: {recall[9]}\n")
+	            log += (f"Recall        @  20: {recall[19]}\n")
+	            log += (f"Recall        @  50: {recall[49]}\n")
+	            log += (f"Recall        @ 100: {recall[99]}\n")
+	
+	            return log
+	
+	        log = metrics_string(labels == 1, -distances)
+	        self.print_and_save(log_file, log)
+	
+|3,0,4,1,27,0,1598134270,"        def metrics_string(y_true, scores):","            sort_perm = np.argsort(-scores)","            thresholds = scores[sort_perm]","            counts = y_true[sort_perm].cumsum()","            precision = counts/np.arange(1, len(y_true) + 1)","            recall = counts/y_true.sum()","","            log = \"\"","","            log += (f\"Precision     @  10: {precision[9]}\\n\")",>67
+|<"            log += (f\"Precision     @  20: {precision[19]}\\n\")","            log += (f\"Precision     @  50: {precision[49]}\\n\")","            log += (f\"Precision     @ 100: {precision[99]}\\n\")","            log += (f\"Avg Precision @  10: {precision[:10].mean()}\\n\")","            log += (f\"Avg Precision @  20: {precision[:20].mean()}\\n\")","            log += (f\"Avg Precision @  50: {precision[:50].mean()}\\n\")",>76
+|<"            log += (f\"Avg Precision @ 100: {precision[:100].mean()}\\n\")","            log += (f\"Recall        @  10: {recall[9]}\\n\")","            log += (f\"Recall        @  20: {recall[19]}\\n\")","            log += (f\"Recall        @  50: {recall[49]}\\n\")","            log += (f\"Recall        @ 100: {recall[99]}\\n\")","","            return log","","        log = metrics_string(labels == 1, -distances)","        self.print_and_save(log_file, log)",""
 "5	LINE	0
-	dd_newline = false
-	# Overwrite a default_prompt_order and  use custom prompt_order
-	# prompt_order=["rust","line_break","package","line_break","character"]
-	# # Wait 10 milliseconds for starship to check files under the current directory.
-	scan_timeout = 100
 	
 	
-|3,0,5,1,7,0,1594747388,"dd_newline = false","# Overwrite a default_prompt_order and  use custom prompt_order","# prompt_order=[\"rust\",\"line_break\",\"package\",\"line_break\",\"character\"]","# # Wait 10 milliseconds for starship to check files under the current directory.","scan_timeout = 100","",""
+	
+	    def save_checkpoint(self, state, is_best=True, filename='checkpoint.pth.tar'):
+	        directory = "{}/{}/".format(self.args.output_dir, self.args.name)
+	        if not os.path.exists(directory):
+	            os.makedirs(directory)
+	        filename = directory + filename
+	        torch.save(state, filename)
+	        if is_best:
+	            shutil.copyfile(filename, '{}/{}/'.format(self.args.output_dir, self.args.name) + 'model_best.pth.tar')
+	
+	    def adjust_learning_rate(self, optimizer, epoch):
+	        lr = self.args.lr * ((1 - 0.015) ** epoch)
+	        for param_group in optimizer.param_groups:
+	            param_group['lr'] = lr
+	
+	
+|3,0,5,1,18,0,1598134243,"","","","    def save_checkpoint(self, state, is_best=True, filename='checkpoint.pth.tar'):","        directory = \"{}/{}/\".format(self.args.output_dir, self.args.name)","        if not os.path.exists(directory):","            os.makedirs(directory)","        filename = directory + filename","        torch.save(state, filename)","        if is_best:",>117
+|<"            shutil.copyfile(filename, '{}/{}/'.format(self.args.output_dir, self.args.name) + 'model_best.pth.tar')","","    def adjust_learning_rate(self, optimizer, epoch):","        lr = self.args.lr * ((1 - 0.015) ** epoch)","        for param_group in optimizer.param_groups:","            param_group['lr'] = lr","",""
 "6	LINE	0
-	dd_newline = false
-	# Overwrite a default_prompt_order and  use custom prompt_order
-	prompt_order=["rust","line_break","package","line_break","character"]
-	# # Wait 10 milliseconds for starship to check files under the current directory.
-	scan_timeout = 100
-|3,0,6,1,5,0,1594747215,"dd_newline = false","# Overwrite a default_prompt_order and  use custom prompt_order","prompt_order=[\"rust\",\"line_break\",\"package\",\"line_break\",\"character\"]","# # Wait 10 milliseconds for starship to check files under the current directory.","scan_timeout = 100"
+	        def metrics_string(y_true, scores):
+	            sort_perm = np.argsort(-scores)
+	            thresholds = scores[sort_perm]
+	            counts = y_true[sort_perm].cumsum()
+	            precision = counts/np.arange(1, len(y_true) + 1)
+	            recall = counts/y_true.sum()
+	
+	            log = ""
+	
+	            log += (f"Precision     @  10: {precision[9]}\n")
+	            log += (f"Precision     @  20: {precision[19]}\n")
+	            log += (f"Precision     @  50: {precision[49]}\n")
+	            log += (f"Precision     @ 100: {precision[99]}\n")
+	            log += (f"Avg Precision @  10: {precision[:10].mean()}\n")
+	            log += (f"Avg Precision @  20: {precision[:20].mean()}\n")
+	            log += (f"Avg Precision @  50: {precision[:50].mean()}\n")
+	            log += (f"Avg Precision @ 100: {precision[:100].mean()}\n")
+	            log += (f"Recall        @  10: {recall[9]}\n")
+	            log += (f"Recall        @  20: {recall[19]}\n")
+	            log += (f"Recall        @  50: {recall[49]}\n")
+	            log += (f"Recall        @ 100: {recall[99]}\n")
+	
+	            return log
+	
+	        log = metrics_string(labels == 1, -distances)
+	        self.print_and_save(log_file, log)
+|3,0,6,1,26,0,1598134242,"        def metrics_string(y_true, scores):","            sort_perm = np.argsort(-scores)","            thresholds = scores[sort_perm]","            counts = y_true[sort_perm].cumsum()","            precision = counts/np.arange(1, len(y_true) + 1)","            recall = counts/y_true.sum()","","            log = \"\"","","            log += (f\"Precision     @  10: {precision[9]}\\n\")",>67
+|<"            log += (f\"Precision     @  20: {precision[19]}\\n\")","            log += (f\"Precision     @  50: {precision[49]}\\n\")","            log += (f\"Precision     @ 100: {precision[99]}\\n\")","            log += (f\"Avg Precision @  10: {precision[:10].mean()}\\n\")","            log += (f\"Avg Precision @  20: {precision[:20].mean()}\\n\")","            log += (f\"Avg Precision @  50: {precision[:50].mean()}\\n\")",>76
+|<"            log += (f\"Avg Precision @ 100: {precision[:100].mean()}\\n\")","            log += (f\"Recall        @  10: {recall[9]}\\n\")","            log += (f\"Recall        @  20: {recall[19]}\\n\")","            log += (f\"Recall        @  50: {recall[49]}\\n\")","            log += (f\"Recall        @ 100: {recall[99]}\\n\")","","            return log","","        log = metrics_string(labels == 1, -distances)","        self.print_and_save(log_file, log)"
 "7	LINE	0
-	        out_obj.append({})
-|3,0,7,1,1,0,1594424345,"        out_obj.append({})"
+	    def _evaluate(self, val_loader, tnet, epoch, log_file):
+	        #  tnet.eval()
+	        #  tnet.embeddingnet.eval()
+	        #  tnet.embeddingnet.embeddingnet.eval()
+	        embeddings = []
+	        distances = []
+	        labels = []
+	
+	        for batch_idx, (im1, img1, onehot1, im2, img2, onehot2, customer_id, customer_emb, label) in enumerate(val_loader):
+	            # print("{}/{}".format(batch_idx, len(self.test_loader)))
+	            anchor  =  self.get_train_data(img1, onehot1)
+	            close   =  self.get_train_data(img2, onehot2)
+	
+	            if self.cuda:
+	                customer_emb = customer_emb.cuda()
+	
+	            dist, mask_norm, embedded_xy, embedded_y, embed_norm_x, embed_norm_y = self.tnet.pair_forward(anchor, close, customer_emb)
+	            dist = dist.data.cpu().numpy()
+	            onehot1 = onehot1.cpu().numpy().astype(bool)
+	            label = label.numpy().astype(int)
+	
+	            distances.append(dist)
+	            labels.append(label)
+	
+	        distances = np.concatenate(distances)
+	        labels = np.concatenate(labels)
+	
+|3,0,7,1,27,0,1598133840,"    def _evaluate(self, val_loader, tnet, epoch, log_file):","        #  tnet.eval()","        #  tnet.embeddingnet.eval()","        #  tnet.embeddingnet.embeddingnet.eval()","        embeddings = []","        distances = []","        labels = []","","        for batch_idx, (im1, img1, onehot1, im2, img2, onehot2, customer_id, customer_emb, label) in enumerate(val_loader):",>73
+|<"            # print(\"{}/{}\".format(batch_idx, len(self.test_loader)))","            anchor  =  self.get_train_data(img1, onehot1)","            close   =  self.get_train_data(img2, onehot2)","","            if self.cuda:","                customer_emb = customer_emb.cuda()","","            dist, mask_norm, embedded_xy, embedded_y, embed_norm_x, embed_norm_y = self.tnet.pair_forward(anchor, close, customer_emb)","            dist = dist.data.cpu().numpy()",>58
+|<"            onehot1 = onehot1.cpu().numpy().astype(bool)","            label = label.numpy().astype(int)","","            distances.append(dist)","            labels.append(label)","","        distances = np.concatenate(distances)","        labels = np.concatenate(labels)",""
 "8	LINE	0
-	            print(item_content)
-|3,0,8,1,1,0,1594423725,"            print(item_content)"
+	
+|3,0,8,1,1,0,1598051538,""
 "9	LINE	0
-	        if image_id in images_done:
-	            success += 1
-	            continue
-|3,0,9,1,3,0,1594248760,"        if image_id in images_done:","            success += 1","            continue"
+	        print(distances_top.shape)
+|3,0,9,1,1,0,1598051537,"        print(distances_top.shape)"
+"b	CHAR	0
+	
+|3,0,11,0,1,0,1595962530,""
+"i	CHAR	0
+	530
+<ii€kbpythonimport jsonjson.load("part0.json")€ku€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€klopen(€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kl)€kl, r€kb"r"€kl€krihe€kb€kb€kbhead p	0	€kl€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kri€kbimport json€ku€ku€kdimport arh€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbpar€kb€kb€kbinfile0 = open("part0.json")€kl, "r"€krV€kd€kuyyppV"_d€klp"_dV"_dV"_d€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kb1€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kb1€kd€kdfor infile in [infile0, infile1]:€kr:q
+|3,0,18,0,1,0,1594855396,>541
+|<"ii€kbpythonimport jsonjson.load(\"part0.json\")€ku€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€klopen(€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kr€kl)€kl, r€kb\"r\"€kl€krihe€kb€kb€kbhead p	0	€kl€kd€kd€kd€kd€kd€kd€kd€kd€kd€kd€kri€kbimport json€ku€ku€kdimport arh€kb€kb€kb€kb€kb€kb€kb€kb€kb€kb€kbpar€kb€kb€kbinfile0 = open(\"part0.json\")€kl, \"r\"€krV€kd€kuyyppV\"_d€klp\"_dV\"_dV\"_d€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kli€kb1€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kl€kb1€kd€k
+|<dfor infile in [infile0, infile1]:€kr:q"
+"q	CHAR	0
+	i€kr€kr€kr€kr€kr€kr€kr€kr€kr_data
+|3,0,26,0,1,0,1597176349,"i€kr€kr€kr€kr€kr€kr€kr€kr€kr_data"
+"u	CHAR	0
+	uuuuuuuuuuu
+|3,0,30,0,1,0,1594855436,"uuuuuuuuuuu"
 "-	CHAR	0
-	btd
-|3,0,36,0,1,0,1594423475,"btd"
+	,
+|3,0,36,0,1,0,1598133787,","
 
 # File marks:
-'0  44  0  ~/.config/starship.toml
-|4,48,44,0,1594747967,"~/.config/starship.toml"
-'1  33  0  ~/.config/starship.toml
-|4,49,33,0,1594747689,"~/.config/starship.toml"
-'2  33  0  ~/.config/starship.toml
-|4,50,33,0,1594747689,"~/.config/starship.toml"
-'3  45  0  ~/.config/starship.toml
-|4,51,45,0,1594747636,"~/.config/starship.toml"
-'4  45  0  ~/.config/starship.toml
-|4,52,45,0,1594747636,"~/.config/starship.toml"
-'5  45  0  ~/.config/starship.toml
-|4,53,45,0,1594747636,"~/.config/starship.toml"
-'6  45  0  ~/.config/starship.toml
-|4,54,45,0,1594747636,"~/.config/starship.toml"
-'7  45  0  ~/.config/starship.toml
-|4,55,45,0,1594747234,"~/.config/starship.toml"
-'8  11  0  ~/.config/starship.toml
-|4,56,11,0,1594747234,"~/.config/starship.toml"
-'9  45  0  ~/.config/starship.toml
-|4,57,45,0,1594747234,"~/.config/starship.toml"
+'0  5  35  ~/src/docker_config
+|4,48,5,35,1598252608,"~/src/docker_config"
+'1  35  0  ~/src/run_sagemaker_train_job.py
+|4,49,35,0,1598169246,"~/src/run_sagemaker_train_job.py"
+'2  35  0  ~/src/run_sagemaker_train_job.py
+|4,50,35,0,1598169246,"~/src/run_sagemaker_train_job.py"
+'3  51  52  ~/src/networks/csa_triplet_net.py
+|4,51,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+'4  51  52  ~/src/networks/csa_triplet_net.py
+|4,52,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+'5  343  0  ~/src/train/csa_triplet.py
+|4,53,343,0,1598133165,"~/src/train/csa_triplet.py"
+'6  316  0  ~/src/train/csa_triplet.py
+|4,54,316,0,1598133165,"~/src/train/csa_triplet.py"
+'7  315  0  ~/src/train/csa_triplet.py
+|4,55,315,0,1598133165,"~/src/train/csa_triplet.py"
+'8  288  0  ~/src/train/csa_triplet.py
+|4,56,288,0,1598133165,"~/src/train/csa_triplet.py"
+'9  344  0  ~/src/train/csa_triplet.py
+|4,57,344,0,1598063077,"~/src/train/csa_triplet.py"
 
 # Jumplist (newest first):
--'  44  0  ~/.config/starship.toml
-|4,39,44,0,1594747967,"~/.config/starship.toml"
--'  33  0  ~/.config/starship.toml
-|4,39,33,0,1594747893,"~/.config/starship.toml"
--'  33  0  ~/.config/starship.toml
-|4,39,33,0,1594747689,"~/.config/starship.toml"
--'  1  0  ~/.config/starship.toml
-|4,39,1,0,1594747675,"~/.config/starship.toml"
--'  1  0  ~/.config/starship.toml
-|4,39,1,0,1594747675,"~/.config/starship.toml"
--'  45  0  ~/.config/starship.toml
-|4,39,45,0,1594747636,"~/.config/starship.toml"
--'  45  0  ~/.config/starship.toml
-|4,39,45,0,1594747636,"~/.config/starship.toml"
--'  45  0  ~/.config/starship.toml
-|4,39,45,0,1594747636,"~/.config/starship.toml"
--'  1  0  ~/.config/starship.toml
-|4,39,1,0,1594747404,"~/.config/starship.toml"
--'  11  0  ~/.config/starship.toml
-|4,39,11,0,1594747234,"~/.config/starship.toml"
--'  48  0  ~/.config/starship.toml
-|4,39,48,0,1594747234,"~/.config/starship.toml"
--'  11  0  ~/.config/starship.toml
-|4,39,11,0,1594747234,"~/.config/starship.toml"
--'  48  0  ~/.config/starship.toml
-|4,39,48,0,1594747234,"~/.config/starship.toml"
--'  11  0  ~/.config/starship.toml
-|4,39,11,0,1594747234,"~/.config/starship.toml"
--'  1  0  ~/.config/starship.toml
-|4,39,1,0,1594747205,"~/.config/starship.toml"
--'  7  16  ~/.config/starship.toml
-|4,39,7,16,1594747124,"~/.config/starship.toml"
--'  7  16  ~/.config/starship.toml
-|4,39,7,16,1594747124,"~/.config/starship.toml"
--'  7  16  ~/.config/starship.toml
-|4,39,7,16,1594747124,"~/.config/starship.toml"
--'  1  0  ~/.config/starship.toml
-|4,39,1,0,1594747063,"~/.config/starship.toml"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  558  8  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,558,8,1594664074,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  1  0  ~/data/polyvore_outfits/nondisjoint/train.json
-|4,39,1,0,1594663728,"~/data/polyvore_outfits/nondisjoint/train.json"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
--'  138  52  ~/.bashrc
-|4,39,138,52,1594660707,"~/.bashrc"
+-'  5  35  ~/src/docker_config
+|4,39,5,35,1598252608,"~/src/docker_config"
+-'  1  0  ~/src/docker_config
+|4,39,1,0,1598232044,"~/src/docker_config"
+-'  29  0  ~/src/run_sagemaker_train_job.py
+|4,39,29,0,1598232044,"~/src/run_sagemaker_train_job.py"
+-'  1  0  ~/src/run_sagemaker_train_job.py
+|4,39,1,0,1598223017,"~/src/run_sagemaker_train_job.py"
+-'  35  0  ~/src/run_sagemaker_train_job.py
+|4,39,35,0,1598169246,"~/src/run_sagemaker_train_job.py"
+-'  35  0  ~/src/run_sagemaker_train_job.py
+|4,39,35,0,1598169246,"~/src/run_sagemaker_train_job.py"
+-'  14  0  ~/src/run_sagemaker_train_job.py
+|4,39,14,0,1598138167,"~/src/run_sagemaker_train_job.py"
+-'  14  0  ~/src/run_sagemaker_train_job.py
+|4,39,14,0,1598138167,"~/src/run_sagemaker_train_job.py"
+-'  101  0  ~/src/run_sagemaker_train_job.py
+|4,39,101,0,1598137482,"~/src/run_sagemaker_train_job.py"
+-'  101  0  ~/src/run_sagemaker_train_job.py
+|4,39,101,0,1598137482,"~/src/run_sagemaker_train_job.py"
+-'  9  19  ~/src/pconf_csa_triplet
+|4,39,9,19,1598137439,"~/src/pconf_csa_triplet"
+-'  1  0  ~/src/run_sagemaker_train_job.py
+|4,39,1,0,1598137439,"~/src/run_sagemaker_train_job.py"
+-'  9  19  ~/src/pconf_csa_triplet
+|4,39,9,19,1598137439,"~/src/pconf_csa_triplet"
+-'  1  0  ~/src/pconf_csa_triplet
+|4,39,1,0,1598135867,"~/src/pconf_csa_triplet"
+-'  305  36  ~/src/train/dataset_triplet.py
+|4,39,305,36,1598135867,"~/src/train/dataset_triplet.py"
+-'  1  0  ~/src/pconf_csa_triplet
+|4,39,1,0,1598135867,"~/src/pconf_csa_triplet"
+-'  305  36  ~/src/train/dataset_triplet.py
+|4,39,305,36,1598135867,"~/src/train/dataset_triplet.py"
+-'  148  8  ~/src/train/dataset_triplet.py
+|4,39,148,8,1598135670,"~/src/train/dataset_triplet.py"
+-'  148  8  ~/src/train/dataset_triplet.py
+|4,39,148,8,1598135670,"~/src/train/dataset_triplet.py"
+-'  128  33  ~/src/train/dataset_triplet.py
+|4,39,128,33,1598135669,"~/src/train/dataset_triplet.py"
+-'  128  33  ~/src/train/dataset_triplet.py
+|4,39,128,33,1598135669,"~/src/train/dataset_triplet.py"
+-'  295  48  ~/src/train/dataset_triplet.py
+|4,39,295,48,1598135555,"~/src/train/dataset_triplet.py"
+-'  327  48  ~/src/train/dataset_triplet.py
+|4,39,327,48,1598135555,"~/src/train/dataset_triplet.py"
+-'  295  48  ~/src/train/dataset_triplet.py
+|4,39,295,48,1598135555,"~/src/train/dataset_triplet.py"
+-'  327  48  ~/src/train/dataset_triplet.py
+|4,39,327,48,1598135555,"~/src/train/dataset_triplet.py"
+-'  7  0  ~/src/train/dataset_triplet.py
+|4,39,7,0,1598135485,"~/src/train/dataset_triplet.py"
+-'  7  0  ~/src/train/dataset_triplet.py
+|4,39,7,0,1598135485,"~/src/train/dataset_triplet.py"
+-'  1  0  ~/src/train/dataset_triplet.py
+|4,39,1,0,1598134063,"~/src/train/dataset_triplet.py"
+-'  223  0  ~/src/train/csa_triplet.py
+|4,39,223,0,1598134063,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/dataset_triplet.py
+|4,39,1,0,1598134063,"~/src/train/dataset_triplet.py"
+-'  223  0  ~/src/train/csa_triplet.py
+|4,39,223,0,1598134063,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598134029,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598134029,"~/src/train/csa_triplet.py"
+-'  51  52  ~/src/networks/csa_triplet_net.py
+|4,39,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+-'  51  52  ~/src/networks/csa_triplet_net.py
+|4,39,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+-'  51  52  ~/src/networks/csa_triplet_net.py
+|4,39,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+-'  51  52  ~/src/networks/csa_triplet_net.py
+|4,39,51,52,1598134016,"~/src/networks/csa_triplet_net.py"
+-'  223  0  ~/src/train/csa_triplet.py
+|4,39,223,0,1598134009,"~/src/train/csa_triplet.py"
+-'  223  0  ~/src/train/csa_triplet.py
+|4,39,223,0,1598134009,"~/src/train/csa_triplet.py"
+-'  270  24  ~/src/train/csa_triplet.py
+|4,39,270,24,1598133899,"~/src/train/csa_triplet.py"
+-'  243  24  ~/src/train/csa_triplet.py
+|4,39,243,24,1598133899,"~/src/train/csa_triplet.py"
+-'  270  24  ~/src/train/csa_triplet.py
+|4,39,270,24,1598133899,"~/src/train/csa_triplet.py"
+-'  243  24  ~/src/train/csa_triplet.py
+|4,39,243,24,1598133899,"~/src/train/csa_triplet.py"
+-'  423  35  ~/src/train/csa_triplet.py
+|4,39,423,35,1598133898,"~/src/train/csa_triplet.py"
+-'  395  35  ~/src/train/csa_triplet.py
+|4,39,395,35,1598133898,"~/src/train/csa_triplet.py"
+-'  423  35  ~/src/train/csa_triplet.py
+|4,39,423,35,1598133898,"~/src/train/csa_triplet.py"
+-'  395  35  ~/src/train/csa_triplet.py
+|4,39,395,35,1598133898,"~/src/train/csa_triplet.py"
+-'  405  13  ~/src/train/csa_triplet.py
+|4,39,405,13,1598133833,"~/src/train/csa_triplet.py"
+-'  377  13  ~/src/train/csa_triplet.py
+|4,39,377,13,1598133833,"~/src/train/csa_triplet.py"
+-'  405  13  ~/src/train/csa_triplet.py
+|4,39,405,13,1598133833,"~/src/train/csa_triplet.py"
+-'  377  13  ~/src/train/csa_triplet.py
+|4,39,377,13,1598133833,"~/src/train/csa_triplet.py"
+-'  539  17  ~/src/train/csa_triplet.py
+|4,39,539,17,1598133831,"~/src/train/csa_triplet.py"
+-'  511  17  ~/src/train/csa_triplet.py
+|4,39,511,17,1598133831,"~/src/train/csa_triplet.py"
+-'  539  17  ~/src/train/csa_triplet.py
+|4,39,539,17,1598133831,"~/src/train/csa_triplet.py"
+-'  511  17  ~/src/train/csa_triplet.py
+|4,39,511,17,1598133831,"~/src/train/csa_triplet.py"
+-'  613  8  ~/src/train/csa_triplet.py
+|4,39,613,8,1598133805,"~/src/train/csa_triplet.py"
+-'  566  8  ~/src/train/csa_triplet.py
+|4,39,566,8,1598133805,"~/src/train/csa_triplet.py"
+-'  613  8  ~/src/train/csa_triplet.py
+|4,39,613,8,1598133805,"~/src/train/csa_triplet.py"
+-'  566  8  ~/src/train/csa_triplet.py
+|4,39,566,8,1598133805,"~/src/train/csa_triplet.py"
+-'  575  21  ~/src/train/csa_triplet.py
+|4,39,575,21,1598133599,"~/src/train/csa_triplet.py"
+-'  575  21  ~/src/train/csa_triplet.py
+|4,39,575,21,1598133599,"~/src/train/csa_triplet.py"
+-'  308  8  ~/src/train/csa_triplet.py
+|4,39,308,8,1598133304,"~/src/train/csa_triplet.py"
+-'  280  8  ~/src/train/csa_triplet.py
+|4,39,280,8,1598133304,"~/src/train/csa_triplet.py"
+-'  308  8  ~/src/train/csa_triplet.py
+|4,39,308,8,1598133304,"~/src/train/csa_triplet.py"
+-'  280  8  ~/src/train/csa_triplet.py
+|4,39,280,8,1598133304,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598133176,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598133176,"~/src/train/csa_triplet.py"
+-'  343  0  ~/src/train/csa_triplet.py
+|4,39,343,0,1598133165,"~/src/train/csa_triplet.py"
+-'  316  0  ~/src/train/csa_triplet.py
+|4,39,316,0,1598133165,"~/src/train/csa_triplet.py"
+-'  315  0  ~/src/train/csa_triplet.py
+|4,39,315,0,1598133165,"~/src/train/csa_triplet.py"
+-'  288  0  ~/src/train/csa_triplet.py
+|4,39,288,0,1598133165,"~/src/train/csa_triplet.py"
+-'  343  0  ~/src/train/csa_triplet.py
+|4,39,343,0,1598133165,"~/src/train/csa_triplet.py"
+-'  316  0  ~/src/train/csa_triplet.py
+|4,39,316,0,1598133165,"~/src/train/csa_triplet.py"
+-'  315  0  ~/src/train/csa_triplet.py
+|4,39,315,0,1598133165,"~/src/train/csa_triplet.py"
+-'  288  0  ~/src/train/csa_triplet.py
+|4,39,288,0,1598133165,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598133148,"~/src/train/csa_triplet.py"
+-'  1  0  ~/src/train/csa_triplet.py
+|4,39,1,0,1598133148,"~/src/train/csa_triplet.py"
+-'  344  0  ~/src/train/csa_triplet.py
+|4,39,344,0,1598063077,"~/src/train/csa_triplet.py"
+-'  317  0  ~/src/train/csa_triplet.py
+|4,39,317,0,1598063077,"~/src/train/csa_triplet.py"
+-'  316  0  ~/src/train/csa_triplet.py
+|4,39,316,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  344  0  ~/src/train/csa_triplet.py
+|4,39,344,0,1598063077,"~/src/train/csa_triplet.py"
+-'  317  0  ~/src/train/csa_triplet.py
+|4,39,317,0,1598063077,"~/src/train/csa_triplet.py"
+-'  316  0  ~/src/train/csa_triplet.py
+|4,39,316,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  289  0  ~/src/train/csa_triplet.py
+|4,39,289,0,1598063077,"~/src/train/csa_triplet.py"
+-'  378  13  ~/src/train/csa_triplet.py
+|4,39,378,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  378  13  ~/src/train/csa_triplet.py
+|4,39,378,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  350  13  ~/src/train/csa_triplet.py
+|4,39,350,13,1598051012,"~/src/train/csa_triplet.py"
+-'  383  8  ~/src/train/csa_triplet.py
+|4,39,383,8,1598051000,"~/src/train/csa_triplet.py"
+-'  356  8  ~/src/train/csa_triplet.py
+|4,39,356,8,1598051000,"~/src/train/csa_triplet.py"
+-'  355  8  ~/src/train/csa_triplet.py
+|4,39,355,8,1598051000,"~/src/train/csa_triplet.py"
 
 # History of marks within files (newest to oldest):
+
+> ~/src/docker_config
+	*	1598232205	0
+	"	5	35
+	^	8	20
+	.	5	44
+	+	8	19
+	+	5	44
+
+> ~/NERD_tree_1
+	*	1598232044	0
+	"	37	0
+	.	1	0
+	+	1	0
+
+> ~/src/run_sagemaker_train_job.py
+	*	1598232025	0
+	"	29	0
+	.	12	0
+	+	100	58
+	+	81	0
+	+	14	97
+	+	14	99
+	+	14	0
+	+	12	0
+
+> /usr/share/vim/vim80/doc/help.txt
+	*	1598137468	0
+	"	1	0
+
+> ~/src/pconf_csa_triplet
+	*	1598136050	0
+	"	9	19
+	^	9	20
+	.	9	19
+	+	21	0
+	+	22	0
+	+	21	0
+	+	22	57
+	+	11	29
+	+	12	0
+	+	11	0
+	+	12	35
+	+	23	62
+	+	22	0
+	+	11	0
+	+	12	0
+	+	24	42
+	+	23	0
+	+	24	0
+	+	3	48
+	+	7	30
+	+	15	0
+	+	16	54
+	+	12	48
+	+	16	48
+	+	23	0
+	+	19	0
+	+	20	0
+	+	18	21
+	+	9	19
+
+> ~/src/train/dataset_triplet.py
+	*	1598135789	0
+	"	305	36
+	^	305	37
+	.	305	36
+	+	88	31
+	+	102	0
+	+	128	31
+	+	119	56
+	+	125	0
+	+	120	66
+	+	126	0
+	+	64	0
+	+	105	22
+	+	131	43
+	+	318	43
+	+	311	38
+	+	313	0
+	+	260	58
+	+	278	72
+	+	260	42
+	+	325	22
+	+	326	13
+	+	342	0
+	+	327	0
+	+	334	0
+	+	341	0
+	+	339	29
+	+	340	26
+	+	341	19
+	+	336	49
+	+	337	0
+	+	337	85
+	+	341	29
+	+	335	0
+	+	101	0
+	+	102	0
+	+	138	0
+	+	126	0
+	+	121	76
+	+	347	32
+	+	129	60
+	+	302	74
+	+	303	51
+	+	304	57
+	+	303	51
+	+	306	55
+	+	307	0
+	+	305	36
+
+> ~/src/train/csa_triplet.py
+	*	1598135424	0
+	"	162	51
+	^	163	52
+	.	163	51
+	+	613	49
+	+	613	0
+	+	613	28
+	+	613	44
+	+	613	84
+	+	613	90
+	+	613	23
+	+	613	124
+	+	613	130
+	+	613	62
+	+	613	55
+	+	613	56
+	+	613	32
+	+	613	29
+	+	613	32
+	+	613	29
+	+	613	32
+	+	613	43
+	+	613	19
+	+	613	15
+	+	613	0
+	+	613	17
+	+	613	18
+	+	613	15
+	+	613	18
+	+	613	0
+	+	613	69
+	+	613	18
+	+	613	0
+	+	510	0
+	+	613	34
+	+	613	33
+	+	613	0
+	+	613	16
+	+	613	18
+	+	613	58
+	+	613	21
+	+	613	61
+	+	613	62
+	+	613	70
+	+	613	71
+	+	613	58
+	+	613	59
+	+	613	43
+	+	613	0
+	+	613	39
+	+	345	0
+	+	345	33
+	+	330	74
+	+	331	0
+	+	345	0
+	+	405	40
+	+	401	8
+	+	405	49
+	+	613	0
+	+	216	0
+	+	219	0
+	+	613	0
+	+	219	0
+	+	596	0
+	+	243	0
+	+	561	45
+	+	294	33
+	+	395	50
+	+	501	51
+	+	513	51
+	+	163	51
+
+> ~/src/networks/csa_triplet_net.py
+	*	1598135308	0
+	"	36	31
+	^	36	32
+	.	36	31
+	+	80	96
+	+	208	48
+	+	210	96
+	+	141	54
+	+	144	61
+	+	141	45
+	+	144	67
+	+	145	67
+	+	199	94
+	+	199	40
+	+	210	87
+	+	208	48
+	+	210	96
+	+	141	54
+	+	144	58
+	+	145	58
+	+	28	38
+	+	205	44
+	+	7	44
+	+	10	11
+	+	82	43
+	+	84	49
+	+	195	0
+	+	194	64
+	+	86	53
+	+	87	11
+	+	141	14
+	+	210	62
+	+	87	0
+	+	88	0
+	+	89	0
+	+	92	0
+	+	103	0
+	+	122	0
+	+	126	0
+	+	139	0
+	+	125	84
+	+	211	44
+	+	209	24
+	+	209	0
+	+	157	28
+	+	158	15
+	+	98	0
+	+	100	0
+	+	23	72
+	+	20	0
+	+	26	0
+	+	23	0
+	+	21	15
+	+	22	0
+	+	21	58
+	+	22	15
+	+	27	0
+	+	28	51
+	+	42	35
+	+	28	0
+	+	29	22
+	+	32	0
+	+	40	0
+	+	35	40
+	+	37	12
+	+	34	37
+	+	33	42
+	+	29	28
+	+	31	36
+	+	51	0
+	+	50	0
+	+	51	52
+	+	124	0
+	+	52	0
+	+	69	23
+	+	52	0
+	+	69	33
+	+	22	72
+	+	36	31
+
+> ~/src/networks/type_specific_network.py
+	*	1598134705	0
+	"	72	4
+	.	126	0
+	+	34	0
+	+	126	0
+
+> ~/NERD_tree_2
+	*	1598133104	0
+	"	6	0
+	.	1	0
+	+	1	0
+
+> ~/data/personalized/to_polyvore_format.py
+	*	1598005175	0
+	"	177	27
+	^	177	28
+	.	177	27
+	+	67	78
+	+	200	0
+	+	201	55
+	+	202	0
+	+	200	18
+	+	201	22
+	+	58	60
+	+	59	60
+	+	63	0
+	+	62	63
+	+	63	0
+	+	66	60
+	+	67	53
+	+	4	17
+	+	62	34
+	+	77	47
+	+	96	0
+	+	8	0
+	+	5	20
+	+	133	40
+	+	81	73
+	+	156	43
+	+	31	0
+	+	150	59
+	+	151	38
+	+	53	26
+	+	67	24
+	+	169	59
+	+	170	62
+	+	169	66
+	+	170	65
+	+	150	19
+	+	180	14
+	+	186	0
+	+	68	36
+	+	103	65
+	+	116	0
+	+	103	66
+	+	105	98
+	+	113	11
+	+	67	88
+	+	68	35
+	+	69	56
+	+	113	12
+	+	112	0
+	+	112	52
+	+	113	44
+	+	115	59
+	+	115	0
+	+	118	0
+	+	119	64
+	+	120	0
+	+	119	48
+	+	115	36
+	+	113	13
+	+	115	0
+	+	68	32
+	+	67	13
+	+	167	40
+	+	67	86
+	+	110	45
+	+	108	35
+	+	67	86
+	+	102	15
+	+	108	34
+	+	11	0
+	+	10	0
+	+	11	0
+	+	22	2
+	+	57	0
+	+	9	4
+	+	57	0
+	+	13	0
+	+	21	0
+	+	13	0
+	+	57	0
+	+	26	130
+	+	25	124
+	+	27	130
+	+	28	52
+	+	28	105
+	+	106	25
+	+	108	44
+	+	106	0
+	+	112	0
+	+	110	10
+	+	109	0
+	+	110	0
+	+	109	48
+	+	67	122
+	+	133	57
+	+	133	61
+	+	156	64
+	+	175	43
+	+	176	44
+	+	180	19
+	+	186	21
+	+	186	0
+	+	183	19
+	+	177	27
+
+> ~/src/train/train_csa_triplet.py
+	*	1598005107	0
+	"	1	0
+
+> ~/src/NERD_tree_1
+	*	1597947574	0
+	"	26	0
+	.	1	0
+	+	1	0
+
+> ~/src/Dockerfile
+	*	1597784424	0
+	"	1	0
+	^	34	63
+	.	34	52
+	+	1	27
+	+	38	74
+	+	31	62
+	+	34	52
+
+> ~/src/train/eval_csa_triplet.py
+	*	1597449778	0
+	"	14	24
+	^	14	25
+	.	14	24
+	+	15	0
+	+	14	24
+
+> ~/src/cropping/crop_single.py
+	*	1597190699	0
+	"	173	94
+	^	173	95
+	.	173	94
+	+	32	45
+	+	51	86
+	+	33	72
+	+	51	61
+	+	33	57
+	+	25	2
+	+	36	45
+	+	43	85
+	+	47	97
+	+	55	0
+	+	64	0
+	+	55	0
+	+	13	0
+	+	55	0
+	+	54	66
+	+	62	44
+	+	114	0
+	+	124	81
+	+	154	0
+	+	151	0
+	+	152	0
+	+	153	11
+	+	152	41
+	+	138	0
+	+	163	64
+	+	173	94
+
+> ~/src/cropping/README.md
+	*	1597189803	0
+	"	10	0
+	^	10	0
+	.	9	90
+	+	2	0
+	+	6	104
+	+	6	0
+	+	7	2
+	+	8	2
+	+	7	26
+	+	8	58
+	+	7	110
+	+	9	42
+	+	3	54
+	+	9	90
+
+> ~/src/cropping/start_server.sh
+	*	1597189534	0
+	"	1	0
+
+> ~/AmazonImageCropping/run_jobs.sh
+	*	1597188359	0
+	"	5	55
+	^	5	56
+	.	4	28
+	+	1	0
+	+	6	0
+	+	4	81
+	+	2	0
+	+	5	63
+	+	6	0
+	+	3	58
+	+	1	11
+	+	4	28
+
+> ~/.vimrc
+	*	1597185707	0
+	"	102	2
+	^	101	3
+	.	101	2
+	+	198	0
+	+	196	19
+	+	198	20
+	+	200	28
+	+	200	81
+	+	200	62
+	+	200	87
+	+	200	28
+	+	196	8
+	+	198	16
+	+	199	0
+	+	196	0
+	+	200	12
+	+	200	13
+	+	201	0
+	+	200	3
+	+	201	14
+	+	198	15
+	+	201	68
+	+	200	14
+	+	201	0
+	+	200	0
+	+	203	0
+	+	203	14
+	+	203	13
+	+	204	13
+	+	203	14
+	+	204	16
+	+	203	15
+	+	200	6
+	+	199	0
+	+	1	0
+	+	206	19
+	+	207	22
+	+	220	35
+	+	216	0
+	+	218	0
+	+	220	35
+	+	221	0
+	+	220	36
+	+	221	0
+	+	5	0
+	+	221	0
+	+	223	14
+	+	222	0
+	+	183	0
+	+	182	22
+	+	172	0
+	+	175	0
+	+	176	0
+	+	183	0
+	+	224	0
+	+	250	0
+	+	222	0
+	+	49	21
+	+	49	0
+	+	40	0
+	+	42	0
+	+	44	0
+	+	45	0
+	+	46	0
+	+	47	0
+	+	48	0
+	+	49	0
+	+	37	0
+	+	42	0
+	+	40	0
+	+	71	32
+	+	70	29
+	+	87	0
+	+	73	0
+	+	76	0
+	+	56	0
+	+	73	0
+	+	67	0
+	+	57	0
+	+	73	54
+	+	75	0
+	+	73	67
+	+	74	32
+	+	118	13
+	+	117	33
+	+	118	14
+	+	250	5
+	+	203	6
+	+	50	32
+	+	70	24
+	+	57	0
+	+	58	0
+	+	67	0
+	+	166	0
+	+	209	21
+	+	210	16
+	+	211	9
+	+	105	0
+	+	104	36
+	+	105	69
+	+	251	0
+	+	100	0
+	+	101	2
+	a	196	0
+
+> ~/AmazonImageCropping/crop_single.py
+	*	1597179386	0
+	"	111	4
+	^	241	22
+	.	242	0
+	+	234	0
+	+	279	0
+	+	273	32
+	+	275	72
+	+	276	18
+	+	294	0
+	+	297	0
+	+	137	0
+	+	177	0
+	+	193	37
+	+	210	30
+	+	275	25
+	+	295	81
+	+	274	29
+	+	275	107
+	+	275	112
+	+	185	0
+	+	185	61
+	+	197	76
+	+	198	0
+	+	217	71
+	+	268	72
+	+	268	54
+	+	279	0
+	+	268	19
+	+	279	0
+	+	279	23
+	+	279	0
+	+	277	0
+	+	279	14
+	+	279	0
+	+	278	14
+	+	268	82
+	+	283	77
+	+	284	10
+	+	285	34
+	+	285	0
+	+	284	46
+	+	283	0
+	+	288	0
+	+	291	0
+	+	289	81
+	+	288	83
+	+	11	27
+	+	266	90
+	+	282	40
+	+	184	0
+	+	185	0
+	+	275	91
+	+	283	71
+	+	284	69
+	+	288	71
+	+	283	0
+	+	284	69
+	+	289	69
+	+	53	48
+	+	54	59
+	+	55	14
+	+	39	22
+	+	74	0
+	+	58	0
+	+	57	0
+	+	58	28
+	+	42	230
+	+	42	132
+	+	43	0
+	+	42	137
+	+	42	13
+	+	42	139
+	+	54	0
+	+	53	0
+	+	54	35
+	+	58	0
+	+	57	0
+	+	53	0
+	+	54	0
+	+	43	14
+	+	43	41
+	+	40	0
+	+	44	38
+	+	45	24
+	+	54	0
+	+	46	40
+	+	47	33
+	+	53	22
+	+	204	0
+	+	205	3
+	+	293	23
+	+	295	0
+	+	296	0
+	+	228	30
+	+	237	0
+	+	238	50
+	+	240	71
+	+	242	0
+	+	241	29
+	+	206	15
+	+	241	22
+	+	242	0
+
+> ~/vis.txt
+	*	1597086907	0
+	"	5	0
+	.	43	0
+	+	1	0
+	+	22	0
+	+	43	0
+
+> ~/data/lab126/to_polyvore_format.py
+	*	1597082815	0
+	"	35	0
+	^	34	0
+	.	35	0
+	+	26	23
+	+	8	4
+	+	19	51
+	+	19	24
+	+	32	45
+	+	33	50
+	+	61	0
+	+	54	0
+	+	36	28
+	+	61	0
+	+	36	29
+	+	43	36
+	+	44	33
+	+	45	52
+	+	46	50
+	+	43	36
+	+	36	33
+	+	48	49
+	+	53	24
+	+	53	0
+	+	49	0
+	+	43	36
+	+	44	33
+	+	46	39
+	+	45	48
+	+	19	0
+	+	55	68
+	+	56	35
+	+	61	0
+	+	62	0
+	+	74	0
+	+	61	34
+	+	55	0
+	+	95	0
+	+	64	0
+	+	61	0
+	+	58	36
+	+	59	36
+	+	91	30
+	+	94	34
+	+	8	10
+	+	9	18
+	+	42	0
+	+	36	43
+	+	37	20
+	+	38	50
+	+	42	0
+	+	40	48
+	+	79	39
+	+	87	38
+	+	55	0
+	+	54	0
+	+	55	0
+	+	55	86
+	+	11	80
+	+	34	138
+	+	79	36
+	+	87	35
+	+	35	0
+	+	34	0
+	+	13	83
+	+	35	103
+	+	34	0
+	+	35	0
+	+	95	0
+	+	13	69
+	+	95	0
+	+	34	0
+	+	35	0
+	+	92	0
+	+	79	36
+	+	87	35
+	+	35	0
+	+	34	0
+	+	79	39
+	+	87	38
+	+	34	0
+	+	35	0
+	+	34	0
+	+	75	28
+	+	79	44
+	+	87	43
+	+	75	16
+	+	96	0
+	+	97	0
+	+	96	23
+	+	97	28
+	+	96	43
+	+	97	61
+	+	97	0
+	+	76	0
+	+	75	0
+	+	76	34
+	+	76	13
+	+	34	0
+	+	35	0
+	+	34	0
+	+	35	0
+	+	34	0
+	+	35	0
+
+> ~/data/utils/analyze.py
+	*	1597053954	0
+	"	38	47
+	^	38	48
+	.	38	47
+	+	14	25
+	+	17	0
+	+	14	37
+	+	12	40
+	+	14	8
+	+	18	0
+	+	18	50
+	+	19	43
+	+	15	0
+	+	16	63
+	+	19	0
+	+	20	0
+	+	19	63
+	+	25	23
+	+	24	32
+	+	25	0
+	+	29	0
+	+	4	30
+	+	29	30
+	+	4	0
+	+	28	5
+	+	27	37
+	+	29	0
+	+	16	0
+	+	28	63
+	+	19	18
+	+	16	78
+	+	19	78
+	+	32	55
+	+	34	43
+	+	35	75
+	+	36	0
+	+	37	0
+	+	37	36
+	+	38	39
+	+	30	8
+	+	32	41
+	+	35	49
+	+	38	47
+
+> ~/src/networks/csa_outfit_net.py
+	*	1597049536	0
+	"	6	0
+
+> ~/src/.gitignore
+	*	1597048471	0
+	"	4	4
+	^	4	5
+	.	4	4
+	+	1	5
+	+	2	9
+	+	3	13
+	+	4	4
+
+> ~/A9VSComplementaryCode/train/csa_triplet.py
+	*	1596739673	0
+	"	329	55
+	^	589	29
+	.	589	28
+	+	306	0
+	+	316	0
+	+	320	17
+	+	325	0
+	+	304	35
+	+	319	35
+	+	316	46
+	+	317	43
+	+	301	44
+	+	285	37
+	+	287	55
+	+	290	24
+	+	287	12
+	+	295	0
+	+	292	60
+	+	294	48
+	+	295	0
+	+	9	0
+	+	39	0
+	+	303	42
+	+	318	0
+	+	289	35
+	+	297	56
+	+	313	0
+	+	297	70
+	+	313	70
+	+	280	0
+	+	296	0
+	+	285	0
+	+	325	16
+	+	325	15
+	+	321	0
+	+	325	8
+	+	325	10
+	+	325	12
+	+	325	59
+	+	325	91
+	+	325	61
+	+	325	18
+	+	325	129
+	+	325	84
+	+	325	142
+	+	325	0
+	+	307	0
+	+	308	0
+	+	325	0
+	+	309	0
+	+	316	0
+	+	322	0
+	+	325	0
+	+	307	12
+	+	308	91
+	+	308	0
+	+	308	92
+	+	309	152
+	+	322	152
+	+	297	0
+	+	313	0
+	+	308	64
+	+	309	64
+	+	322	55
+	+	320	0
+	+	314	0
+	+	305	0
+	+	310	0
+	+	312	38
+	+	313	0
+	+	311	94
+	+	312	0
+	+	311	94
+	+	312	0
+	+	311	17
+	+	296	48
+	+	309	159
+	+	311	48
+	+	322	159
+	+	324	54
+	+	323	0
+	+	531	37
+	+	521	32
+	+	564	84
+	+	21	23
+	+	385	17
+	+	386	44
+	+	394	0
+	+	500	0
+	+	393	0
+	+	385	19
+	+	588	0
+	+	589	51
+	+	590	44
+	+	591	24
+	+	592	28
+	+	593	28
+	+	594	26
+	+	591	23
+	+	592	27
+	+	593	28
+	+	594	25
+	+	589	28
+
+> ~/A9VSComplementaryCode/train/dataset_triplet.py
+	*	1596739256	0
+	"	60	19
+	^	83	0
+	.	99	0
+	+	151	38
+	+	83	0
+	+	84	0
+	+	78	110
+	+	112	0
+	+	155	12
+	+	154	12
+	+	155	0
+	+	145	165
+	+	164	0
+	+	78	121
+	+	78	0
+	+	146	0
+	+	223	53
+	+	224	53
+	+	178	110
+	+	178	57
+	+	179	0
+	+	178	53
+	+	66	36
+	+	65	36
+	+	66	32
+	+	65	9
+	+	71	0
+	+	133	0
+	+	152	26
+	+	152	11
+	+	152	0
+	+	100	29
+	+	83	0
+	+	62	0
+	+	85	0
+	+	93	40
+	+	100	36
+	+	258	0
+	+	291	3
+	+	290	0
+	+	101	33
+	+	261	0
+	+	144	0
+	+	134	70
+	+	135	0
+	+	90	39
+	+	268	0
+	+	147	7
+	+	146	0
+	+	95	86
+	+	96	0
+	+	104	14
+	+	104	0
+	+	128	41
+	+	118	99
+	+	119	28
+	+	119	76
+	+	105	27
+	+	125	0
+	+	58	0
+	+	58	7
+	+	58	0
+	+	119	0
+	+	125	0
+	+	119	0
+	+	105	0
+	+	119	56
+	+	124	0
+	+	125	0
+	+	62	23
+	+	82	0
+	+	62	20
+	+	291	38
+	+	291	0
+	+	310	23
+	+	291	0
+	+	119	47
+	+	124	63
+	+	119	0
+	+	292	0
+	+	297	0
+	+	52	71
+	+	71	31
+	+	98	44
+	+	99	51
+	+	88	32
+	+	99	0
+	m	292	0
+
+> ~/A9VSComplementaryCode/pconf_csa_triplet
+	*	1596669936	0
+	"	13	0
+	^	8	19
+	.	8	19
+	+	2	0
+	+	5	0
+	+	2	19
+	+	15	31
+	+	18	32
+	+	2	36
+	+	15	36
+	+	3	0
+	+	2	0
+	+	3	50
+	+	15	50
+	+	17	21
+	+	5	21
+	+	13	0
+	+	18	0
+	+	11	0
+	+	18	0
+	+	19	59
+	+	18	0
+	+	19	0
+	+	18	0
+	+	19	68
+	+	3	41
+	+	15	43
+	+	16	62
+	+	15	0
+	+	16	0
+	+	6	63
+	+	20	0
+	+	19	0
+	+	18	0
+	+	2	0
+	+	16	0
+	+	13	19
+	+	20	42
+	+	18	0
+	+	19	0
+	+	20	45
+	+	20	0
+	+	19	0
+	+	20	0
+	+	13	19
+	+	6	0
+	+	7	21
+	+	20	0
+	+	19	0
+	+	4	0
+	+	3	0
+	+	4	44
+	+	5	19
+	+	20	0
+	+	15	44
+	+	17	19
+	+	9	0
+	+	7	0
+	+	9	0
+	+	13	0
+	+	8	19
+	+	9	0
+	+	7	0
+	+	8	19
+
+> ~/data/utils/item_md_join.py
+	*	1596669010	0
+	"	7	57
+	^	7	58
+	.	7	58
+	+	3	0
+	+	7	46
+	+	6	25
+	+	7	26
+	+	7	46
+	+	8	0
+	+	7	28
+	+	7	0
+	+	6	53
+	+	7	58
+	+	8	0
+	+	6	27
+	+	7	27
+	+	15	6
+	+	11	5
+	+	15	27
+	+	9	25
+	+	13	18
+	+	15	29
+	+	18	30
+	+	7	58
+
+> ~/A9VSComplementaryCode/train/eval_csa_triplet.py
+	*	1596668197	0
+	"	14	3
+	^	1	5
+	.	1	5
+	+	1	5
+
+> ~/A9VSComplementaryCode/train/dataset_item.py
+	*	1596563898	0
+	"	153	0
+	^	179	46
+	.	179	46
+	+	64	38
+	+	51	17
+	+	64	24
+	+	63	0
+	+	60	0
+	+	64	0
+	+	81	0
+	+	91	0
+	+	92	0
+	+	87	42
+	+	89	34
+	+	88	0
+	+	79	33
+	+	63	0
+	+	90	0
+	+	100	0
+	+	186	0
+	+	192	0
+	+	192	33
+	+	193	0
+	+	201	0
+	+	186	0
+	+	153	21
+	+	154	22
+	+	157	0
+	+	164	0
+	+	165	0
+	+	178	0
+	+	183	0
+	+	184	0
+	+	154	31
+	+	154	22
+	+	174	0
+	+	182	47
+	+	159	32
+	+	184	24
+	+	155	0
+	+	157	0
+	+	177	0
+	+	157	0
+	+	176	45
+	+	177	40
+	+	180	40
+	+	179	46
+
+> ~/A9VSComplementaryCode/networks/csa_triplet_net.py
+	*	1596504683	0
+	"	11	23
+	^	11	24
+	.	11	10
+	+	44	21
+	+	40	10
+	+	44	0
+	+	36	27
+	+	18	58
+	+	24	25
+	+	20	86
+	+	21	0
+	+	20	15
+	+	21	85
+	+	22	15
+	+	25	19
+	+	26	21
+	+	27	45
+	+	18	36
+	+	20	47
+	+	37	96
+	+	39	52
+	+	98	35
+	+	104	44
+	+	7	44
+	+	11	10
+
+> ~/data/pairs/to_polyvore_format.py
+	*	1596494751	0
+	"	38	22
+	^	95	14
+	.	95	14
+	+	63	24
+	+	63	114
+	+	63	14
+	+	63	43
+	+	46	20
+	+	46	70
+	+	46	0
+	+	48	9
+	+	46	0
+	+	53	0
+	+	46	0
+	+	63	0
+	+	40	0
+	+	51	85
+	+	52	38
+	+	55	62
+	+	63	21
+	+	63	0
+	+	42	0
+	+	63	0
+	+	64	0
+	+	74	17
+	+	105	26
+	+	92	41
+	+	105	48
+	+	92	63
+	+	91	63
+	+	74	0
+	+	118	26
+	+	121	29
+	+	124	26
+	+	133	0
+	+	123	26
+	+	120	27
+	+	47	45
+	+	50	0
+	+	49	84
+	+	62	74
+	+	73	0
+	+	32	46
+	+	41	42
+	+	42	0
+	+	45	62
+	+	47	0
+	+	28	0
+	+	34	0
+	+	32	0
+	+	31	0
+	+	28	0
+	+	29	0
+	+	32	0
+	+	30	0
+	+	111	46
+	+	62	23
+	+	111	85
+	+	113	42
+	+	118	17
+	+	121	17
+	+	124	21
+	+	121	30
+	+	62	0
+	+	54	0
+	+	55	0
+	+	55	36
+	+	55	0
+	+	54	46
+	+	7	37
+	+	54	0
+	+	54	78
+	+	54	3
+	+	54	34
+	+	54	0
+	+	60	0
+	+	54	0
+	+	55	0
+	+	54	73
+	+	55	0
+	+	58	0
+	+	23	32
+	+	58	0
+	+	111	48
+	+	112	2
+	+	112	85
+	+	111	43
+	+	112	43
+	+	113	0
+	+	116	0
+	+	113	0
+	+	115	41
+	+	118	25
+	+	121	20
+	+	95	16
+	+	95	0
+	+	95	64
+	+	96	0
+	+	95	14
+
+> ~/AmazonImageCropping/generate_commands.py
+	*	1596477479	0
+	"	26	7
+	^	34	16
+	.	34	16
+	+	1	0
+	+	1	38
+	+	1	0
+	+	1	19
+	+	1	0
+	+	1	33
+	+	1	60
+	+	1	90
+	+	1	2
+	+	1	8
+	+	1	3
+	+	1	6
+	+	1	10
+	+	1	5
+	+	1	8
+	+	1	0
+	+	32	72
+	+	30	32
+	+	18	0
+	+	1	0
+	+	30	0
+	+	32	72
+	+	30	7
+	+	32	75
+	+	38	19
+	+	36	67
+	+	27	0
+	+	4	38
+	+	32	51
+	+	32	72
+	+	34	16
+
+> ~/NERD_tree_3
+	*	1596476288	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.vim/bundle/vim-airline/doc/airline.txt
+	*	1596472024	0
+	"	753	70
+
+> ~/ter
+	*	1596471897	0
+	"	1	0
+	^	9	0
+	.	8	27
+	+	2	0
+	+	3	31
+	+	4	0
+	+	5	0
+	+	4	6
+	+	6	33
+	+	8	16
+	+	8	27
+
+> ~/AmazonImageCropping/x
+	*	1596230743	0
+	"	9	0
+	^	1	0
+	.	9	0
+	+	1	0
+	+	2	0
+	+	3	0
+	+	4	0
+	+	5	0
+	+	7	0
+	+	6	0
+	+	8	0
+	+	9	0
+
+> ~/AmazonImageCropping/NERD_tree_1
+	*	1596230682	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/ControlP
+	*	1596056350	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/A9VSComplementaryCode/.gitignore
+	*	1596045442	0
+	"	6	4
+	^	6	5
+	.	7	0
+	+	3	0
+	+	4	5
+	+	5	5
+	+	7	0
+
+> ~/data/fashionscience/to_asins_csv.py
+	*	1595985460	0
+	"	19	0
+	.	16	0
+	+	12	0
+	+	7	17
+	+	16	0
+	+	18	48
+	+	20	0
+	+	2	10
+	+	25	0
+	+	18	38
+	+	20	25
+	+	24	18
+	+	18	44
+	+	26	0
+	+	17	0
+	+	18	0
+	+	17	0
+	+	18	71
+	+	16	0
+
+> ~/data/fashionscience/to_polyvore_format.py
+	*	1595982482	0
+	"	18	61
+	^	18	62
+	.	18	62
+	+	3	32
+	+	4	33
+	+	19	0
+	+	10	43
+	+	11	29
+	+	19	0
+	+	13	38
+	+	16	134
+	+	11	0
+	+	18	42
+	+	6	13
+	+	18	62
+
+> /usr/share/vim/vim80/doc/pattern.txt
+	*	1595973933	0
+	"	1211	0
+
+> /usr/share/vim/vim80/doc/repeat.txt
+	*	1595970684	0
+	"	57	0
+
+> ~/.vim/bundle/nerdcommenter/doc/NERD_commenter.txt
+	*	1595970616	0
+	"	749	4
+
+> /usr/share/vim/vim80/doc/if_pyth.txt
+	*	1595970372	0
+	"	866	6
+
+> ~/.vim/bundle/syntastic/doc/syntastic.txt
+	*	1595970318	0
+	"	1132	60
+
+> ~/.vim/bundle/ale/doc/ale-python.txt
+	*	1595968580	0
+	"	742	58
+
+> /usr/share/vim/vim80/doc/change.txt
+	*	1595968042	0
+	"	758	8
+
+> ~/AmazonImageCropping/crop_to_box.py
+	*	1595966812	0
+	"	50	54
+	^	94	0
+	.	94	0
+	+	2	0
+	+	192	29
+	+	121	29
+	+	122	0
+	+	94	0
+
+> ~/A9VSComplementaryCode/vis/plot_prec.py
+	*	1595895808	0
+	"	6	39
+	^	4	0
+	.	5	0
+	+	1	0
+	+	5	305
+	+	1	0
+	+	1	601
+	+	5	299
+	+	5	0
+	+	1	301
+	+	1	0
+	+	5	19
+	+	1	13
+	+	5	0
+	+	2	0
+	+	5	0
+
+> ~/A9VSComplementaryCode/train/gen_csa_triplet.py
+	*	1595876279	0
+	"	14	26
+	^	15	31
+	.	15	30
+	+	1	0
+	+	2	0
+	+	14	27
+	+	15	30
+
+> ~/models/compatibility/run.py
+	*	1595876275	0
+	"	1	0
+
+> ~/data/pairs/crop_to_box.py
+	*	1595629581	0
+	"	99	14
+	^	36	48
+	.	36	47
+	+	34	0
+	+	35	0
+	+	36	47
+
+> ~/data/pairs/category_map.txt
+	*	1595629579	0
+	"	1	0
+
+> ~/AmazonImageCropping/start_server.sh
+	*	1595629575	0
+	"	1	66
+	^	1	67
+	.	1	66
+	+	1	1
+	+	1	90
+	+	1	0
+	+	1	88
+	+	3	0
+	+	1	66
+
+> ~/data/crop_to_box.py
+	*	1595532612	0
+	"	64	30
+	^	111	22
+	.	111	22
+	+	111	22
+
+> ~/data/pairs/complemntarity_stylists.csv
+	*	1595531341	0
+	"	1	0
+	^	1	1
+	.	1	0
+	+	1	0
+
+> ~/data/pairs/NERD_tree_1
+	*	1595531330	0
+	"	7	0
+	.	1	0
+	+	1	0
+
+> ~/data/pairs/asins_imp.csv
+	*	1595527360	0
+	"	2	0
+	^	2	0
+	.	1	4
+	+	1	4
+
+> ~/.tmux.conf
+	*	1595524173	0
+	"	2	0
+
+> ~/data/dummy/generate.py
+	*	1595522991	0
+	"	11	0
+	^	11	0
+	.	10	42
+	+	5	56
+	+	8	0
+	+	7	34
+	+	12	31
+	+	13	74
+	+	14	81
+	+	18	18
+	+	2	18
+	+	18	58
+	+	20	11
+	+	43	0
+	+	40	0
+	+	25	4
+	+	26	0
+	+	28	0
+	+	27	4
+	+	27	35
+	+	28	11
+	+	20	11
+	+	32	61
+	+	39	0
+	+	33	0
+	+	32	14
+	+	38	25
+	+	42	17
+	+	40	39
+	+	43	0
+	+	44	0
+	+	48	0
+	+	44	26
+	+	48	27
+	+	52	32
+	+	52	33
+	+	52	0
+	+	53	0
+	+	52	4
+	+	52	22
+	+	52	0
+	+	9	52
+	+	9	0
+	+	3	18
+	+	9	52
+	+	10	42
+
+> ~/A9VSComplementaryCode/train/dataset_outfit.py
+	*	1595522988	0
+	"	155	8
+	^	276	58
+	.	276	57
+	+	276	57
+
+> ~/A9VSComplementaryCode/Config
+	*	1595273190	0
+	"	1	0
+
+> /usr/share/vim/vim80/doc/map.txt
+	*	1595013108	0
+	"	85	31
+
+> ~/A9VSComplementaryCode/train/csa_outfit.py
+	*	1595012760	0
+	"	435	8
+	^	385	47
+	.	385	47
+	+	23	50
+	+	46	42
+	+	150	56
+	+	270	35
+	+	46	42
+	+	385	47
+
+> ~/A9VSComplementaryCode/retrieval/dataset.py
+	*	1595012634	0
+	"	6	2
+
+> ~/s:GetNumScroll(num)
+	*	1595012417	0
+	"	1	0
+
+> ~/A9VSComplementaryCode/retrieval/outfit_retrieval.py
+	*	1595011689	0
+	"	53	0
+
+> /usr/share/vim/vim80/doc/cmdline.txt
+	*	1595011116	0
+	"	189	2
+
+> /usr/share/vim/vim80/doc/scroll.txt
+	*	1595011044	0
+	"	51	15
+
+> ~/A9VSComplementaryCode/networks/type_specific_network.py
+	*	1595006000	0
+	"	123	8
+	^	68	36
+	.	68	35
+	+	75	70
+	+	74	61
+	+	140	75
+	+	123	63
+	+	144	0
+	+	40	45
+	+	29	41
+	+	48	32
+	+	54	57
+	+	55	47
+	+	57	56
+	+	58	39
+	+	62	56
+	+	65	52
+	+	66	43
+	+	67	52
+	+	68	35
+
+> ~/A9VSComplementaryCode/retrieval/test.py
+	*	1594977905	0
+	"	10	28
+	^	13	31
+	.	13	30
+	+	13	30
+
+> ~/A9VSComplementaryCode/NERD_tree_1
+	*	1594977541	0
+	"	13	0
+	.	1	0
+	+	1	0
+
+> ~/A9VSComplementaryCode/pconf_csa_outfit
+	*	1594977495	0
+	"	1	0
+	^	16	19
+	.	16	19
+	+	5	30
+	+	2	0
+	+	14	0
+	+	15	0
+	+	14	19
+	+	3	0
+	+	2	0
+	+	3	0
+	+	2	19
+	+	14	19
+	+	16	19
+
+> ~/A9VSComplementaryCode/networks/csa_outfit_net.py
+	*	1594938017	0
+	"	31	14
+
+> ~/A9VSComplementaryCode/train/train_csa_outfit.py
+	*	1594927249	0
+	"	16	0
+
+> ~/.vim/pack/vendor/start/nerdtree/doc/NERDTree.txt
+	*	1594927126	0
+	"	341	0
+
+> ~/A9VSComplementaryCode/train/train_csa_triplet.py
+	*	1594927008	0
+	"	13	3
+
+> ~/A9VSComplementaryCode/train/__init__.py
+	*	1594926799	0
+	"	1	0
+
+> ~/data/lab126/get_pairs.py
+	*	1594926473	0
+	"	35	57
+	^	35	58
+	.	35	40
+	+	43	0
+	+	33	30
+	+	33	31
+	+	6	13
+	+	33	42
+	+	36	0
+	+	34	0
+	+	36	47
+	+	30	0
+	+	36	83
+	+	39	33
+	+	39	57
+	+	41	0
+	+	36	56
+	+	39	33
+	+	40	0
+	+	39	71
+	+	40	0
+	+	43	0
+	+	47	0
+	+	45	4
+	+	46	3
+	+	45	0
+	+	48	0
+	+	49	0
+	+	48	118
+	+	52	122
+	+	52	24
+	+	18	20
+	+	36	45
+	+	37	0
+	+	36	47
+	+	18	0
+	+	36	0
+	+	35	54
+	+	31	42
+	+	35	40
+
+> ~/data/lab126/NERD_tree_1
+	*	1594926370	0
+	"	12	0
+	.	1	0
+	+	1	0
+
+> ~/url_list.txt
+	*	1594924916	0
+	"	1	0
+	.	1728	0
+	+	10	0
+	+	1728	0
+	+	1727	0
+	+	1728	0
+
+> ~/A9VSComplementaryCode/networks/Resnet_18.py
+	*	1594923387	0
+	"	2	0
+
+> ~/data/amazon_dataset/to_polyvore_format.py
+	*	1594890586	0
+	"	48	4
+	^	48	33
+	.	48	33
+	+	3	34
+	+	4	0
+	+	9	34
+	+	9	35
+	+	9	34
+	+	12	0
+	+	11	28
+	+	5	11
+	+	11	25
+	+	11	44
+	+	7	13
+	+	19	72
+	+	28	51
+	+	29	68
+	+	55	0
+	+	14	0
+	+	23	12
+	+	24	0
+	+	23	41
+	+	18	14
+	+	23	73
+	+	36	0
+	+	33	0
+	+	12	0
+	+	37	10
+	+	55	0
+	+	45	10
+	+	38	15
+	+	41	34
+	+	43	25
+	+	45	39
+	+	46	60
+	+	49	23
+	+	50	0
+	+	42	29
+	+	45	0
+	+	51	18
+	+	52	34
+	+	19	0
+	+	26	15
+	+	32	40
+	+	21	22
+	+	20	0
+	+	21	0
+	+	21	55
+	+	1	32
+	+	56	0
+	+	55	38
+	+	56	24
+	+	26	0
+	+	32	0
+	+	11	0
+	+	23	58
+	+	14	0
+	+	49	0
+	+	47	0
+	+	48	0
+	+	46	41
+	+	47	40
+	+	48	41
+	+	46	46
+	+	47	0
+	+	46	46
+	+	47	45
+	+	48	46
+	+	46	33
+	+	47	33
+	+	48	33
+
+> ~/data/start_server.sh
+	*	1594890485	0
+	"	1	59
+	^	1	60
+	.	1	59
+	+	1	59
+
+> ~/data/stop_server.sh
+	*	1594860198	0
+	"	1	24
+	^	1	25
+	.	1	24
+	+	1	24
+	o	1	0
+	u	1	0
+
+> ~/data/NERD_tree_1
+	*	1594860066	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/data/fashionscience/get_pairs.py
+	*	1594856534	0
+	"	23	0
+	^	23	1
+	.	23	0
+	+	10	35
+	+	11	0
+	+	6	13
+	+	16	44
+	+	17	0
+	+	17	161
+	+	24	0
+	+	23	0
+
+> ~/data/fashionscience/get_pairs.csv
+	*	1594856194	0
+	"	9	0
+
+> ~/README
+	*	1594855654	0
+	"	7	0
+	^	7	0
+	.	6	33
+	+	1	11
+	+	3	32
+	+	4	33
+	+	6	33
+
+> ~/AmazonImageCropping/label_map.txt
+	*	1594755422	0
+	"	3	7
+
+> ~/A9VSComplementaryCode/pconf_test
+	*	1594755193	0
+	"	5	24
+	^	5	0
+	.	5	0
+	+	15	24
+	+	15	109
+	+	15	0
+	+	5	0
+
+> /usr/share/vim/vim80/doc/windows.txt
+	*	1594755188	0
+	"	205	57
+
+> /usr/share/vim/vim80/doc/spell.txt
+	*	1594754432	0
+	"	1436	16
+
+> ~/config/NERD_tree_1
+	*	1594752126	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> ~/A9VSComplementaryCode/retrieval/.test.py.swp
+	*	1594749963	0
+	"	1	0
 
 > ~/.config/starship.toml
 	*	1594747966	0
@@ -508,385 +2650,3 @@
 	+	45	0
 	+	33	0
 	+	45	0
-
-> ~/NERD_tree_1
-	*	1594747893	0
-	"	4	0
-	.	1	0
-	+	1	0
-
-> ~/data/polyvore_outfits/nondisjoint/train.json
-	*	1594664073	0
-	"	558	8
-
-> ~/.bashrc
-	*	1594660706	0
-	"	138	52
-	^	138	53
-	.	138	52
-	+	138	225
-	+	138	0
-	+	137	28
-	+	138	52
-
-> ~/data/amazon_dataset/to_polyvore_format.py
-	*	1594424350	0
-	"	11	8
-	^	29	1
-	.	11	0
-	+	3	34
-	+	4	0
-	+	9	34
-	+	9	35
-	+	9	34
-	+	12	0
-	+	11	28
-	+	5	11
-	+	11	25
-	+	11	44
-	+	7	13
-	+	16	72
-	+	25	51
-	+	26	68
-	+	50	0
-	+	14	0
-	+	20	12
-	+	21	0
-	+	20	41
-	+	15	14
-	+	20	73
-	+	33	0
-	+	30	0
-	+	12	0
-	+	34	10
-	+	50	0
-	+	42	10
-	+	35	15
-	+	38	34
-	+	40	25
-	+	42	39
-	+	43	60
-	+	44	23
-	+	45	0
-	+	39	29
-	+	42	0
-	+	46	18
-	+	47	34
-	+	16	0
-	+	23	15
-	+	29	40
-	+	18	22
-	+	17	0
-	+	18	0
-	+	18	55
-	+	1	32
-	+	51	0
-	+	50	38
-	+	51	24
-	+	23	0
-	+	29	0
-	+	11	0
-
-> ~/data/amazon_dataset/NERD_tree_1
-	*	1594424330	0
-	"	9	0
-	.	1	0
-	+	1	0
-
-> ~/data/amazon_dataset/outfits_lab126.tsv
-	*	1594422120	0
-	"	1	0
-
-> ~/localizer/crop_to_box.py
-	*	1594249001	0
-	"	100	37
-	^	135	38
-	.	135	37
-	+	59	0
-	+	70	38
-	+	112	0
-	+	70	64
-	+	70	59
-	+	71	0
-	+	69	0
-	+	68	0
-	+	69	0
-	+	67	0
-	+	114	0
-	+	115	0
-	+	116	50
-	+	118	26
-	+	119	30
-	+	120	0
-	+	121	0
-	+	121	25
-	+	121	9
-	+	64	14
-	+	63	1
-	+	64	0
-	+	113	0
-	+	114	0
-	+	116	0
-	+	114	0
-	+	69	58
-	+	118	26
-	+	121	0
-	+	139	0
-	+	121	0
-	+	123	0
-	+	122	19
-	+	122	26
-	+	122	25
-	+	123	0
-	+	135	5
-	+	138	0
-	+	133	0
-	+	135	37
-
-> ~/localizer/NERD_tree_1
-	*	1594248806	0
-	"	6	0
-	.	1	0
-	+	1	0
-
-> ~/localizer/run_server.sh
-	*	1594248593	0
-	"	1	77
-	^	1	106
-	.	1	105
-	+	1	105
-
-> ~/localizer/multi-model-server/README.md
-	*	1594248588	0
-	"	195	31
-	^	157	3
-	.	164	0
-	+	114	0
-	+	164	0
-	k	71	42
-	o	114	0
-	u	115	0
-	x	50	26
-
-> ~/A9VSComplementaryCode/.gitignore
-	*	1594235405	0
-	"	4	4
-	^	4	5
-	.	4	4
-	+	3	0
-	+	4	4
-
-> ~/A9VSComplementaryCode/train/dataset_triplet.py
-	*	1594170410	0
-	"	152	28
-	^	66	10
-	.	66	9
-	+	145	38
-	+	85	0
-	+	86	0
-	+	79	110
-	+	110	0
-	+	149	12
-	+	148	12
-	+	149	0
-	+	140	165
-	+	158	0
-	+	79	121
-	+	79	0
-	+	141	0
-	+	217	53
-	+	218	53
-	+	172	110
-	+	172	57
-	+	173	0
-	+	172	53
-	+	67	36
-	+	66	36
-	+	67	32
-	+	66	9
-
-> ~/polyvore_outfits/disjoint/train.json
-	*	1594159980	0
-	"	87	17
-	^	27	16
-	.	30	0
-	+	8	0
-	+	36	0
-	+	30	19
-	+	30	0
-
-> ~/polyvore_outfits/polyvore_item_metadata.json
-	*	1594159727	0
-	"	32	8
-
-> ~/A9VSComplementaryCode/train/train_csa_outfit.py
-	*	1594155713	0
-	"	16	0
-
-> ~/polyvore_outfits/NERD_tree_1
-	*	1594154994	0
-	"	5	0
-	.	1	0
-	+	1	0
-
-> ~/localizer/downloaded_images/NERD_tree_1
-	*	1594150928	0
-	"	5	0
-	.	1	0
-	+	1	0
-
-> ~/localizer/spring_selection_uniq.csv
-	*	1594150611	0
-	"	1	106
-	^	1	107
-	.	1	100
-	+	1	0
-	+	1	100
-
-> ~/NERD_tree_2
-	*	1594147287	0
-	"	19	0
-	.	1	0
-	+	1	0
-
-> ~/A9VSComplementaryCode/train/csa_triplet.py
-	*	1594077601	0
-	"	44	8
-	.	283	0
-	+	21	50
-	+	42	42
-	+	283	0
-
-> ~/A9VSComplementaryCode/NERD_tree_1
-	*	1594077419	0
-	"	35	0
-	.	1	0
-	+	1	0
-
-> ~/A9VSComplementaryCode/train/eval_csa_triplet.py
-	*	1594077379	0
-	"	1	3
-	^	1	5
-	.	1	5
-	+	1	5
-
-> ~/A9VSComplementaryCode/csa_triplet.py
-	*	1594077193	0
-	"	33	0
-
-> ~/.vimrc
-	*	1594075289	0
-	"	215	0
-
-> ~/polyvore_outfits/README
-	*	1594054786	0
-	"	3	9
-
-> ~/!tmux
-	*	1594054717	0
-	"	1	0
-
-> ~/polyvore_outfits/disjoint/valid.json
-	*	1594054600	0
-	"	1	0
-
-> ~/polyvore_outfits/disjoint/fill_in_blank_train.json
-	*	1594054577	0
-	"	1	0
-	^	1	0
-	.	1	0
-	+	1	0
-
-> ~/polyvore_outfits/polyvore_outfit_titles.json
-	*	1593653104	0
-	"	31	39
-
-> ~/A9VSComplementaryCode/networks/csa_triplet_net.py
-	*	1593652586	0
-	"	104	39
-
-> ~/A9VSComplementaryCode/train/train_csa_triplet.py
-	*	1593652457	0
-	"	21	0
-
-> ~/A9VSComplementaryCode/networks/type_specific_network.py
-	*	1593651656	0
-	"	131	34
-	^	123	64
-	.	123	63
-	+	75	70
-	+	74	61
-	+	140	75
-	+	123	63
-
-> ~/.vim/bundle/syntastic/doc/syntastic.txt
-	*	1593636058	0
-	"	90	51
-
-> ~/polyvore_outfits/disjoint/compatibility_train.txt
-	*	1593538502	0
-	"	293	72
-
-> ~/A9VSComplementaryCode/pconf_csa_triplet
-	*	1593538394	0
-	"	2	47
-	^	2	18
-	.	13	32
-	+	2	0
-	+	3	0
-	+	2	19
-	+	11	31
-	+	13	32
-
-> ~/A9VSComplementaryCode/train/csa_outfit.py
-	*	1593458987	0
-	"	32	24
-	^	385	47
-	.	385	47
-	+	23	50
-	+	46	42
-	+	150	56
-	+	270	35
-	+	46	42
-	+	385	47
-
-> ~/A9VSComplementaryCode/train/pconf_csa_outfit
-	*	1593458566	0
-	"	1	0
-
-> ~/A9VSComplementaryCode/train/dataset_outfit.py
-	*	1593457149	0
-	"	276	57
-	^	276	58
-	.	276	57
-	+	276	57
-
-> ~/A9VSComplementaryCode/train/__init__.pyc
-	*	1593457034	0
-	"	1	0
-
-> ~/A9VSComplementaryCode/pconf_csa_outfit
-	*	1593453318	0
-	"	16	31
-	^	16	19
-	.	16	19
-	+	5	30
-	+	2	0
-	+	14	0
-	+	15	0
-	+	14	19
-	+	3	0
-	+	2	0
-	+	3	0
-	+	2	19
-	+	14	19
-	+	16	19
-
-> ~/[Vundle] Installer
-	*	1593452793	0
-	"	17	0
-	.	1	0
-	+	1	0
-
-> ~/localizer/url_list.txt
-	"	1	0
