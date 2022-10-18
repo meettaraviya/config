@@ -99,18 +99,16 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-compass-research-ssh () { ssh -i ~/Downloads/project-compass-research-key2.pem ubuntu@54.164.99.231 }
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/mtaravi/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/Users/meet/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/mtaravi/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/mtaravi/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/Users/meet/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/meet/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/mtaravi/opt/miniconda3/bin:$PATH"
+        export PATH="/Users/meet/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
